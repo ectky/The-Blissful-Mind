@@ -1,0 +1,110 @@
+.site-header {
+
+}
+
+.site-header .site-title {
+    text-align: center;
+}
+
+.site-header .site-title img {
+    height: 25vh;
+    width: 50vw;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.site-header .site-title img:hover {
+    opacity: 0.6;
+}
+
+.site-header .socials {
+    display: flex;
+    position: absolute;
+    top: 95px;
+    left: 30px;
+}
+
+.site-header .socials li  {
+    padding-right: 2.5em;
+    list-style: none;
+}
+
+.site-header .socials i {
+    font-size: 1.5em;
+    color: #000;
+    transition: color 0.5s ease-in-out;
+}
+
+.site-header .socials i:hover {
+    color: var(--dark-grey);
+}
+
+.site-header .search-form input{
+    border: none;
+    border: solid;
+    position: absolute;
+    top: 95px;
+    right: 30px;
+    height: 20px;
+    width: 200px;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 4px;
+    outline: none;
+    padding: 0.2em 0.2em;
+    transition: border 0.5s ease-in-out;
+}
+
+.site-header .search-form input:hover {
+    border-color: var(--dark-grey);
+}
+
+.site-header .search-form input:after {
+    display: block;
+    font-size: 30px;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f002';
+    color: #000;
+    font-weight: 900;
+    padding: 2em;
+}
+
+.site-nav nav {
+    display: flex;
+    justify-content:center;
+    padding: 2.5em 0;
+}
+
+.site-nav nav li {
+    display: flex;
+    list-style: none;
+}
+
+.site-nav nav li:not(:last-child) {
+    padding-right: 1em;
+}
+
+.site-nav nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color 0.5s ease-in-out;
+}
+
+.site-nav nav a:hover {
+    color: var(--dark-grey);
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
+.site-main {
+    height: 120vh;
+}
