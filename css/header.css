@@ -44,30 +44,33 @@
     border: solid;
     position: absolute;
     top: 95px;
-    right: 30px;
+    right: 47px;
     height: 20px;
-    width: 200px;
-    border-width: 2px;
+    width: 15em;
+    border-width: 1.5px;
     border-color: #000;
     border-radius: 4px;
     outline: none;
-    padding: 0.2em 0.2em;
+    padding: 0.2em;
     transition: border 0.5s ease-in-out;
     font-style: italic;
+    font-size: 0.8em;
 }
 
 .site-header .search-form input:hover {
     border-color: var(--dark-grey);
 }
 
-.site-header .search-form input:after {
-    display: block;
-    font-size: 30px;
-    font-family: 'Font Awesome 5 Free';
-    content: '\f002';
+.search-btn {
     color: #000;
-    font-weight: 900;
-    padding: 2em;
+    transition: color 0.5s ease-in-out;
+    position: absolute;
+    top: 98px;
+    right: 27px;
+}
+
+.search-btn:hover {
+    color: var(--dark-grey);
 }
 
 .site-nav nav {
