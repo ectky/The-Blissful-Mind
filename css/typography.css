@@ -12,6 +12,6 @@ form {
     font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
 }
 
-input {
+input, textarea {
     font-family: inherit;
 }
