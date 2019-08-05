@@ -1,0 +1,442 @@
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome .content {
+    flex-basis: 33%;
+    padding: 5em 5em 8em 10em;
+    background-color: var(--light-pink);
+}
+
+.welcome .image {
+    flex-basis: 50%;
+    background: url('../images/IMG_8431.jpg');
+    overflow: hidden;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome .content h4 {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    font-weight: 400;
+}
+
+.welcome .content h1 {
+    font-size: 3em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.welcome .content h1::after {
+    content: '';
+    background-color: black;
+    width: 4rem;
+    height: 1px;
+    display: block;
+    margin-top: 1em;
+}
+
+.welcome .content p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.welcome .content a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.welcome .content a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.free-planner {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+
+.free-planner .image {
+    background: url('../images/Self-Care-MockUp.png') center center no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    flex-basis: 50%;
+    border-radius: 2px;
+    max-width: 200px;
+}
+
+.free-planner .planner {
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 1em;
+}
+
+.free-planner .planner form {
+    padding-bottom: 5rem;
+}
+
+.free-planner .planner h2 {
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.free-planner .planner p {
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.free-planner .planner input {
+    height: 1rem;
+    width: 17rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    margin-right: 0.5rem;
+}
+
+.free-planner .planner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--light-pink);
+    padding: 0.6rem 1.5rem;;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.introduction {
+    background-color: var(--light-pink);
+    justify-content: center;
+    display: flex;
+    padding: 6rem 8rem;
+}
+
+.introduction .content {
+    margin: 2rem;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.introduction h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.introduction a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.introduction a:hover {
+    background-color: white;
+    color: black;
+}
+
+.introduction .image {
+    background: url('../images/aboutMe.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 500px;
+    margin-right: 2rem;
+    flex-basis: 100%;
+}
+
+.new-in-blog {
+    text-align: center;
+    padding: 6em 6em;
+}
+
+.new-in-blog h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.new-in-blog h2::after {
+    content: '';
+    background-color: black;
+    width: 80%;
+    height: 1px;
+    display: block;
+    margin-top: 1em;
+    margin: 1em auto;
+}
+
+.new-in-blog h4 {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.new-in-blog .btn {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.new-in-blog .btn:hover {
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
+}
+.new-in-blog i {
+    padding-left: 1em;
+    color: black;
+}
+
+.new-in-blog ul {
+    display: flex;
+    margin: 2.5em 0;
+    justify-content: center;
+}
+
+.new-in-blog ul li {
+    list-style: none;
+    flex-basis: 30%;
+    box-shadow: 0px 0px 8px 0px rgba(204,190,204,1);
+    transition: box-shadow 0.5s ease-in-out;
+    text-align: left;
+    width: 200px;
+}
+
+.new-in-blog ul li:hover {
+    box-shadow: 0px 0px 15px 4px rgba(204,190,204,1);
+}
+
+.new-in-blog ul li:not(:last-child) {
+    margin-right: 1em;
+}
+
+.new-in-blog ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.new-in-blog ul img {
+    display: block;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    height: auto;  
+}
+
+.new-in-blog  .image {   
+    display: block;
+    position: relative;
+    overflow: hidden; 
+    margin-bottom: 2rem; 
+  }
+  
+.new-in-blog  .image:before {
+  content: '';
+  padding-top: 53%;
+  display: block;
+}
+
+.new-in-blog .title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+  
+.new-in-blog p {
+    margin:  1rem 0;
+}
+
+.new-in-blog .content {
+    padding: 0 2rem;
+}
+
+
+.self-care {
+    display: flex;
+}
+
+.self-care .content {
+    flex-basis: 33%;
+    padding: 5em 5em 8em 10em;
+    background-color: var(--light-pink);
+}
+
+.self-care .image {
+    flex-basis: 50%;
+    background: url('../images/mockup-1.jpg');
+    overflow: hidden;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.self-care .content h4 {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    font-weight: 400;
+}
+
+.self-care .content h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+
+}
+
+.self-care .content h4::after {
+    content: '';
+    background-color: black;
+    width: 4rem;
+    height: 1px;
+    display: block;
+    margin-top: 1em;
+}
+
+.self-care .content p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.self-care .content a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    margin-top: 5rem;
+}
+
+.self-care .content a:hover {
+    background-color: white;
+    color: black;
+}
+
+.self-care ul {
+    padding-bottom: 2rem;
+}
+
+.self-care ul li {
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+.self-care ul i {
+    padding-right: 1rem;
+}
+
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe .content {
+    flex-basis: 45%;
+    padding: 5em;
+    background-color: var(--light-pink);
+    text-align: center;
+}
+
+.subscribe .image {
+    flex-basis: 45%;
+    background: url('../images/Monthly-Planning-IMG-7.jpg');
+    overflow: hidden;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe .content h4 {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.subscribe .content h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.subscribe .content h1::after {
+    content: '';
+    background-color: black;
+    width: 4rem;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.subscribe .content a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.subscribe .content a:hover {
+    background-color: white;
+    color: black;
+}
+
+.subscribe form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subscribe input {
+    height: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    margin-right: 0.5rem;
+    margin-bottom: 2em;
+}
