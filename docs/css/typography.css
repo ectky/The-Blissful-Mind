@@ -1,0 +1,13 @@
+html {
+  font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1, h2 {
+  font-family: "Playfair Display", Sans-serif; }
+
+form {
+  font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif; }
+
+input, textarea {
+  font-family: inherit; }
