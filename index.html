@@ -4,7 +4,6 @@
 
 layout: main
 isFromNav: yes
-permalink: /
 ---
 <div class="wrapper">
     <section class="welcome">
@@ -49,35 +48,17 @@ permalink: /
         <h2>What's New On The Blog</h2>
         <h4>GRAB A CUP OF TEA AND CATCH UP</h4>
         <ul class="blog-posts">
+            {% for post in site.posts limit:1 %}
             <li>
-                <a href="/post/1" class="image">
-                    <img src="images/Get-Out-of-Head-Featured.jpg" alt="girl in woods">
+                <a href="{{ post.url }}" class="image">
+                    <img src="{{ post.img }}" alt="post image">
                 </a>
                 <div class="content">
-                    <a href="{{ site.baseurl }}//post/1" class="title">HOW TO STOP TALKING YOURSELF OUT OF THINGS</a>
-                    <p>Head full of ideas but can’t get them started? Here are three tips to stop talking yourself out
-                        things.</p>
+                    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                    <p>{{ post.description }}</p>
                 </div>
             </li>
-            <li>
-                <a href="/post/2" class="image">
-                    <img src="images/Negative-People-Featured-Image.jpg" alt="girl on the floor">
-                </a>
-                <div class="content">
-                    <a href="{{ site.baseurl }}//post/2" class="title">HOW TO DEAL WITH NEGATIVE PEOPLE</a>
-                    <p>Is other people’s negativity affecting your mindset? Here are five tips to help you deal with the
-                        Negative Nancys in your life.</p>
-                </div>
-            </li>
-            <li>
-                <a href="/post/3" class="image">
-                    <img src="images/Morning-Mindset-Routine-Featured-Image.jpg" alt="girl's morning">
-                </a>
-                <div class="content">
-                    <a href="{{ site.baseurl }}//post/3" class="title">MY NEW MORNING MINDSET ROUTINE</a>
-                    <p>Keep yourself motivated and focused with this simple morning mindset routine.</p>
-                </div>
-            </li>
+            {% endfor %}
         </ul>
         <a href="{{ site.baseurl }}/blog" class="btn">read the blog<i class="fas fa-arrow-right"></i></a>
     </section>
