@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/The-Blissful-Mind/css/style.css">
+    <link rel="shortcut icon" href="/The-Blissful-Mind/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/The-Blissful-Mind/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
@@ -24,7 +26,7 @@
                 <li><a href=https://www.instagram.com/ectky }}><i
                             class="fab fa-instagram"></i></a></li>
             </ul>
-            <a href="/The-Blissful-Mind/"><img src="/images/The-Blissful-Mind-Logo-Mobile.png"
+            <a href="/The-Blissful-Mind/"><img src="/The-Blissful-Mind/images/The-Blissful-Mind-Logo-Mobile.png"
                     alt="The-Blissful-Mind-Logo"></a>
             <form class="search-form">
                 <input type="text" class="search" placeholder="Search...">
@@ -110,7 +112,10 @@
         <h2>What's New On The Blog</h2>
         <h4>GRAB A CUP OF TEA AND CATCH UP</h4>
         <ul class="blog-posts">
-            {% for post in site.posts limit:1 %}
+            {% if site.posts %}
+            hi
+            {% endif %}
+            {% for post in site.posts limit:3 %}
             <li>
                 <a href="{{ post.url }}" class="image">
                     <img src="{{ post.img }}" alt="post image">
