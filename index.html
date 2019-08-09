@@ -50,7 +50,7 @@ isFromNav: yes
         <ul class="blog-posts">
             {% for post in site.posts limit:3 %}
             <li>
-                <a href="{{ post.url }}" class="image">
+                <a href="{{ site.baseurl }}/{{ post.url }}" class="image">
                     <img src="{{ site.baseurl }}/{{ post.img }}" alt="post image">
                 </a>
                 <div class="content">
