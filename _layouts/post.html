@@ -1,5 +1,88 @@
 ---
 layout: main
 ---
-<h1>{{ page.title }}</h1>
-<h1>{{ content }}</h1>
+<div class="post-wrapper">
+    <section class="post">
+        <h1>{{ page.title }}</h1>
+        <img src="{{ site.baseurl }}/{{ page.img }}" alt="post picture">
+
+        <div class="about-post">
+            <div>
+                <a href="{{ site.baseurl }}/about">By: <span class="un">{{ page.author }}</span></a>
+            </div>
+            <div class="categories-ul">
+                <p>Categories: </p>
+                <ul class="categories">
+                    {% for category in page.categories %}
+                    <li>
+                        <a href="{{ site.baseurl }}/categories/{{ category | slugify }}"><span
+                                class="un">{{category}}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <p>{{ page.date | date_to_string }}</p>
+            </div>
+        </div>
+
+        <div class="content">
+            {{ content }}
+        </div>
+    </section>
+
+    <section class="post-sidebar">
+        <div class="about-me">
+            <h3>About Me</h3>
+            <a href="{{ site.baseurl }}/about"><img src="{{ site.baseurl }}/images/me.jpg" alt="Ellie"></a>
+            <p>I'm Ellie! I'm a mindset coach who helps overthinkers get out of their own heads so they can stress less
+                and take action.</p>
+            <p><i class="fas fa-map-marker-alt"></i>Dimitrovgrad, BG</p>
+        </div>
+
+        <div class="socials">
+            <h3>Let's Be Friends</h3>
+            <ul class="socials ">
+                <li><a href={{ "https://www.facebook.com/" | append: {{site.twitter_username}} }}><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a href={{ "https://www.twitter.com/" | append: {{site.twitter_username}} }}><i
+                            class="fab fa-twitter"></i></a></li>
+                <li><a href={{ "https://www.instagram.com/" | append: {{site.twitter_username}} }}><i
+                            class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="latest-posts">
+            <h3>Latest posts</h3>
+            <ul>
+                {% for post in site.posts  limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">
+                        <img src="{{ site.baseurl }}/{{ post.img }}" alt="post image">
+                        <span class="un">{{post.title}}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="search">
+            <h3>Search</h3>
+            <form action="">
+                <input type="text" placeholder="Search and hit enter..." id="search">
+            </form>
+        </div>
+
+        <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+                {% for category in site.categories %}
+                <li>
+                    <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}"><span
+                            class="un">{{category[0]}}</span></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</div>

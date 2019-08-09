@@ -1,0 +1,27 @@
+.post .content p {
+  padding: 1em 0; }
+
+.post .content h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--light-pink);
+  text-align: center;
+  margin-bottom: 1em; }
+
+.post .content h3 {
+  padding: 0.5em 0; }
+
+.post .content .question {
+  background-color: var(--light-pink);
+  margin: 1.5em 3em;
+  padding: 1em;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 5px 10px var(--dark-pink); }
+
+.post .content .quote {
+  margin: 1em 0;
+  margin-left: 2em;
+  border-left: 4px solid var(--dark-pink);
+  padding-left: 1em;
+  font-weight: 600; }
