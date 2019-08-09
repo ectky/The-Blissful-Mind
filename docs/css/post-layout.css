@@ -88,6 +88,9 @@
 .post-sidebar .about-me p i {
   padding-right: 0.5em; }
 
+.post-sidebar .socials {
+  margin: 1em; }
+
 .post-sidebar .socials ul {
   display: flex;
   justify-content: center;
@@ -103,6 +106,9 @@
 
 .post-sidebar .socials i:hover {
   color: var(--light-pink); }
+
+.post-sidebar .categories {
+  margin: 1em; }
 
 .post-sidebar .categories li {
   margin: 1em; }
@@ -126,6 +132,9 @@
 .un:hover:after {
   width: 85%;
   margin: 0 auto; }
+
+.post-sidebar .latest-posts ul {
+  margin: 2em 0; }
 
 .post-sidebar .latest-posts li {
   margin: 1em; }
