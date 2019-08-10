@@ -19,6 +19,11 @@
     padding-bottom: 2em;
 }
 
+.posts h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .posts ul li {    
     display: flex;
     justify-content: center;

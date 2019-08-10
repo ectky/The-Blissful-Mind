@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: Blog
-permalink: /blog/
-isFromNav: yes
+title: Mindset
+permalink: /categories/mindset/
 ---
 
+<h1>Category: {{ page.title }}</h1>
 <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories["mindset"] %}
     <li>
         <div class="image">
             <a href="{{ site.baseurl }}{{ post.url }}">
