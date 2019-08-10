@@ -96,13 +96,20 @@ h1 {
   font-style: italic;
   margin-right: 0.5rem; }
 
-.free-planner .planner a {
-  text-decoration: none;
+.free-planner .planner input[type="submit"] {
+  border: none;
   text-transform: uppercase;
   background: var(--light-pink);
   padding: 0.6rem 1.5rem;
   letter-spacing: 0.1em;
-  color: black; }
+  color: black;
+  width: 10%;
+  font-style: normal;
+  transition: all 0.5s ease-in-out; }
+
+.free-planner .planner input[type="submit"]:hover {
+  color: white;
+  background-color: var(--dark-grey); }
 
 .introduction {
   background-color: var(--light-pink);
@@ -342,7 +349,8 @@ h1 {
   margin: 0 auto;
   margin-top: 1em; }
 
-.subscribe .content a {
+.subscribe .content input[type="submit"] {
+  border: none;
   text-decoration: none;
   background-color: black;
   color: #fff;
@@ -350,9 +358,10 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.8rem;
+  font-style: normal;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
 
-.subscribe .content a:hover {
+.subscribe .content input[type="submit"]:hover {
   background-color: white;
   color: black; }
 

@@ -32,6 +32,8 @@
 }
 
 .contact .send-message input, textarea{
+    border: none;
+    border: 1px solid var(--dark-grey);
     width: 100%;
     font-size: 1rem;
     padding: 0.5em;
@@ -43,18 +45,19 @@
     resize: none;
 }
 
-.contact .send-message a {
-    text-decoration: none;
+.contact .send-message input[type="submit"] {
+    border: none;
     background-color: black;
     color: #fff;
     padding: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
+    font-style: normal;
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.contact .send-message a:hover {
+.contact .send-message input[type="submit"]:hover {
     background-color: white;
     color: black;
 }

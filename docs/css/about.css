@@ -57,7 +57,7 @@
   text-align: center; }
 
 .help-list ul {
-  padding: 2rem 6rem; }
+  padding: 2rem 0; }
 
 .help-list ul li {
   padding-bottom: 2rem;
@@ -120,7 +120,8 @@
 
 .social-media {
   text-align: center;
-  background-color: var(--light-pink); }
+  background-color: var(--light-pink);
+  padding: 2rem 0; }
 
 .social-media .socials {
   display: flex;
@@ -132,14 +133,22 @@
   list-style: none;
   margin-top: 2rem;
   background-color: white;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out; }
 
 .social-media .socials li:not(:last-child) {
   margin-right: 2em; }
 
 .social-media .socials a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  transition: all 0.5s ease-in-out; }
+
+.social-media .socials li:hover {
+  background-color: black; }
+
+.social-media .socials li:hover a {
+  color: white; }
 
 .social-media .socials i {
   width: 2em;
