@@ -17,10 +17,10 @@
 
 .post h1 {
   text-transform: uppercase;
-  margin-top: -15px;
   font-size: 2rem;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 500;
+  border-bottom: 4px solid var(--light-pink); }
 
 .post img {
   width: 100%;
@@ -59,7 +59,7 @@
   text-align: center; }
 
 .post-sidebar h3 {
-  display: inline;
+  margin: 0.5em 0;
   text-transform: uppercase;
   color: var(--black-grey);
   font-weight: 500;
@@ -68,9 +68,9 @@
 
 .post-sidebar h3::after {
   content: '';
-  height: 4px;
+  height: 2px;
   background-color: darkgray;
-  margin-top: -15px;
+  margin-top: 0px;
   display: block; }
 
 .post-sidebar .about-me img {
