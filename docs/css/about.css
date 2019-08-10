@@ -7,11 +7,11 @@
 
 .hello .image img {
   display: block;
-  transform: translate(-50%, -50%);
-  top: 82%;
+  position: relative;
+  top: 50%;
   left: 25%;
-  position: absolute;
-  width: 40%;
+  transform: translateY(-50%);
+  width: 100%;
   height: auto; }
 
 .hello .content {
