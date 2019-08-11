@@ -1,3 +1,20 @@
+.back-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--black-grey);
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  color: white;
+  transition: all 0.5s ease-in-out; }
+
+.back-to-top:hover {
+  background-color: var(--dark-pink);
+  color: var(--black-grey); }
+
+.back-to-top i {
+  padding-left: 0.5em; }
+
 .site-header .site-title {
   text-align: center; }
 
