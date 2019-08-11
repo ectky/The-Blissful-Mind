@@ -2,8 +2,7 @@
   grid-column: 1 / -1; }
 
 .ebook-header {
-  background: url("../images/Start-day-with-clarity-feat-Copy-2.jpg") center center no-repeat;
-  padding: 30vh; }
+  background: url("../images/Start-day-with-clarity-feat-Copy-2.jpg") center center no-repeat; }
 
 .ebook-header .content {
   background-color: white;
@@ -37,21 +36,19 @@
 
 .ebook-wrapper .good-news {
   background-color: var(--light-pink);
-  padding: 3.5rem 0; }
+  padding: 5em; }
 
 .ebook-wrapper .good-news p {
   text-align: center;
   font-size: 1.4rem;
   padding-bottom: 1em;
-  width: 70vw;
   margin: 0 auto; }
 
 .bold {
   font-weight: 600; }
 
 .ebook-wrapper .intro {
-  width: 70vw;
-  margin: 3.5em auto;
+  padding: 5em;
   text-align: center; }
 
 .ebook-wrapper .intro img {
@@ -88,26 +85,17 @@
   text-transform: uppercase;
   padding-bottom: 2em; }
 
-.ebook-wrapper .self-care .img {
-  margin: 6em auto; }
-
 .ebook-wrapper .self-care img {
-  width: 130%;
-  height: 100%; }
+  display: none; }
 
 .ebook-wrapper .faq {
-  width: 70vw;
-  margin: 3.5em auto; }
+  padding: 5em; }
 
 .ebook-wrapper .faq h2 {
   font-weight: 500;
   font-size: 2rem;
   padding-bottom: 1em;
   text-align: center; }
-
-.ebook-wrapper .faq ul {
-  -moz-columns: 2;
-       columns: 2; }
 
 .ebook-wrapper .faq li {
   list-style: none;
@@ -118,10 +106,9 @@
 
 .ebook-wrapper .buy {
   background-color: var(--light-pink);
-  padding: 3.5em 0; }
+  padding: 5em; }
 
 .ebook-wrapper .buy .content {
-  width: 70vw;
   margin: 0 auto;
   text-align: center; }
 
@@ -130,11 +117,11 @@
 
 .ebook-wrapper .buy img {
   margin: 0 auto;
-  padding-left: 2em; }
+  width: 40%; }
 
 .ebook-wrapper .buy a {
   display: inline-block;
-  margin: 1em;
+  margin-top: 1em;
   text-decoration: none;
   background-color: var(--dark-pink);
   color: black;

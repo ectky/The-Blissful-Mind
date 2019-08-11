@@ -3,14 +3,12 @@
 }
 
 .contact-wrapper .contact {
-    display: flex;
     background-color: var(--light-pink);
-    padding: 5rem 8rem;
-    justify-content: space-between;
+    padding: 5em;
 }
 
 .contact .content {
-    flex-basis: 45%
+    padding-bottom: 2em;
 }
 
 .contact .content h1 {
@@ -29,10 +27,6 @@
 
 .contact .content p a {
     color: black;
-}
-
-.contact .send-message {
-    flex-basis: 45%
 }
 
 .contact .send-message input, textarea{
