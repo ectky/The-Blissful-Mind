@@ -81,9 +81,9 @@
 
 .ig-pics ul {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 120px;
-  grid-column-gap: 0.3em; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 0.3em; }
 
 .ig-pics ul li img {
   width: 100%;

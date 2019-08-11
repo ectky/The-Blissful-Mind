@@ -5,19 +5,14 @@ h1 {
 .home-wrapper {
   grid-column: 1 / -1; }
 
-.welcome {
-  display: flex; }
-
 .welcome .content {
-  flex-basis: 33%;
-  padding: 5em 5em 8em 10em;
+  padding: 5em;
   background-color: var(--light-pink); }
 
 .welcome .image {
-  flex-basis: 50%;
   background: url("../images/IMG_8431.jpg");
   overflow: hidden;
-  background-position: center left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -61,8 +56,6 @@ h1 {
   color: black; }
 
 .free-planner {
-  display: flex;
-  justify-content: center;
   padding: 2rem 3rem; }
 
 .free-planner .image {
@@ -74,9 +67,7 @@ h1 {
   max-width: 200px; }
 
 .free-planner .planner {
-  flex-wrap: wrap;
-  text-align: center;
-  padding-left: 1em; }
+  text-align: center; }
 
 .free-planner .planner form {
   padding-bottom: 5rem; }
@@ -92,21 +83,20 @@ h1 {
   font-size: 1.2rem; }
 
 .free-planner .planner input {
-  height: 1rem;
-  width: 17rem;
+  width: 90%;
   padding: 0.5rem;
+  margin: 0.5rem 0;
   font-size: 1rem;
-  font-style: italic;
-  margin-right: 0.5rem; }
+  font-style: italic; }
 
 .free-planner .planner input[type="submit"] {
+  width: 20%;
   border: none;
   text-transform: uppercase;
   background: var(--light-pink);
   padding: 0.6rem 1.5rem;
   letter-spacing: 0.1em;
   color: black;
-  width: 10%;
   font-style: normal;
   transition: all 0.5s ease-in-out; }
 
@@ -116,12 +106,7 @@ h1 {
 
 .introduction {
   background-color: var(--light-pink);
-  justify-content: center;
-  display: flex;
-  padding: 6rem 8rem; }
-
-.introduction .content {
-  margin: 2rem; }
+  padding: 5em; }
 
 .introduction p {
   font-size: 1.2rem;
@@ -146,17 +131,9 @@ h1 {
   background-color: white;
   color: black; }
 
-.introduction .image {
-  background: url("../images/aboutMe.jpg") center center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  max-width: 500px;
-  margin-right: 2rem;
-  flex-basis: 100%; }
-
 .new-in-blog {
   text-align: center;
-  padding: 6em 6em; }
+  padding: 5em; }
 
 .new-in-blog h2 {
   font-size: 2.5rem;
@@ -196,27 +173,22 @@ h1 {
   color: black; }
 
 .new-in-blog ul {
-  display: flex;
-  margin: 2.5em 0;
-  justify-content: center; }
+  margin: 2.5em 0; }
 
 .new-in-blog ul li {
-  list-style: none;
-  flex-basis: 30%;
   box-shadow: 0px 0px 8px 0px #ccbecc;
   transition: box-shadow 0.5s ease-in-out;
   text-align: left;
-  width: 200px; }
+  min-width: 200px;
+  max-width: 70%;
+  min-height: 100%;
+  margin: 0 auto; }
 
 .new-in-blog ul li:hover {
   box-shadow: 0px 0px 15px 4px #ccbecc; }
 
 .new-in-blog ul li:not(:last-child) {
-  margin-right: 1em; }
-
-.new-in-blog ul a {
-  text-decoration: none;
-  color: black; }
+  margin-bottom: 2em; }
 
 .new-in-blog ul img {
   display: block;
@@ -230,8 +202,7 @@ h1 {
 .new-in-blog .image {
   display: block;
   position: relative;
-  overflow: hidden;
-  margin-bottom: 2rem; }
+  overflow: hidden; }
 
 .new-in-blog .image:before {
   content: '';
@@ -246,23 +217,11 @@ h1 {
   margin: 1rem 0; }
 
 .new-in-blog .content {
-  padding: 0 2rem; }
-
-.self-care {
-  display: flex; }
+  padding: 1.5rem 2rem; }
 
 .self-care .content {
-  flex-basis: 33%;
-  padding: 5em 5em 8em 10em;
+  padding: 5em;
   background-color: var(--light-pink); }
-
-.self-care .image {
-  flex-basis: 50%;
-  background: url("../images/mockup-1.jpg");
-  overflow: hidden;
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
 .self-care .content h4 {
   letter-spacing: 0.5em;
@@ -313,14 +272,11 @@ h1 {
 .self-care ul i {
   padding-right: 1rem; }
 
-.subscribe {
-  display: flex; }
-
 .subscribe .content {
-  flex-basis: 45%;
   padding: 5em;
   background-color: var(--light-pink);
-  text-align: center; }
+  text-align: center;
+  border-top: 1px solid var(--dark-grey); }
 
 .subscribe .image {
   flex-basis: 45%;

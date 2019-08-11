@@ -1,6 +1,4 @@
 @media (min-width: 640px) {
-  html {
-    font-size: 12px; }
   .site-nav nav {
     display: flex;
     justify-content: center; }
@@ -9,7 +7,29 @@
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0px 1px 3px 0px #858585; } }
+    box-shadow: 0px 1px 3px 0px #858585; }
+  .welcome .content {
+    padding: 5em 8em; }
+  .introduction {
+    padding: 5em 8em; }
+  .free-planner {
+    display: flex;
+    justify-content: center; }
+  .free-planner .planner {
+    flex-wrap: wrap; }
+  .introduction .image {
+    background: url("../images/aboutMe.jpg") center top no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 400px;
+    min-height: 400px; }
+  .new-in-blog {
+    padding: 5em 8em; }
+  .self-care .content {
+    padding: 5em 8em; }
+  .subscribe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (min-width: 960px) {
   html {
@@ -37,12 +57,38 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2em; }
   .ig-pics ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100px);
-    grid-row-gap: 0.3em; }
+    display: grid; }
   .copyright {
-    grid-column: 1 / -1; } }
+    grid-column: 1 / -1; }
+  .welcome {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .free-planner .planner input {
+    height: 1rem;
+    width: 17rem; }
+  .introduction {
+    display: flex; }
+  .introduction .content {
+    margin-left: 2em; }
+  .new-in-blog ul {
+    display: flex;
+    justify-content: center; }
+  .new-in-blog ul li {
+    flex-basis: 30%; }
+  .new-in-blog ul li:not(:last-child) {
+    margin-right: 1em;
+    margin-bottom: 0; }
+  .self-care {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .self-care .image {
+    background: url("../images/mockup-1.jpg");
+    overflow: hidden;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .subscribe .content {
+    border: none; } }
 
 @media (min-width: 1024px) {
   html {
@@ -66,4 +112,8 @@
   .posts {
     grid-area: content; }
   .post-sidebar {
-    grid-area: sidebar; } }
+    grid-area: sidebar; }
+  .free-planner .planner input[type="submit"] {
+    width: 10%; }
+  .ig-pics ul {
+    grid-template-rows: repeat(2, 150px); } }
