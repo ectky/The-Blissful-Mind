@@ -8,9 +8,7 @@
     top: 0;
     width: 100%;
     box-shadow: 0px 1px 3px 0px #858585; }
-  .welcome .content {
-    padding: 5em 8em; }
-  .introduction {
+  .welcome .content, .introduction, .new-in-blog, .self-care .content {
     padding: 5em 8em; }
   .free-planner {
     display: flex;
@@ -23,10 +21,6 @@
     overflow: hidden;
     min-width: 400px;
     min-height: 400px; }
-  .new-in-blog {
-    padding: 5em 8em; }
-  .self-care .content {
-    padding: 5em 8em; }
   .subscribe {
     display: grid;
     grid-template-columns: repeat(2, 1fr); } }

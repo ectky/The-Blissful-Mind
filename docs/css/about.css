@@ -1,24 +1,12 @@
 .about-wrapper {
   grid-column: 1 / -1; }
 
-.hello {
-  display: flex; }
-
-.hello .image {
-  background-color: var(--light-pink);
-  width: 140vw; }
-
 .hello .image img {
-  display: block;
-  position: relative;
-  top: 50%;
-  left: 25%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: auto; }
+  display: none; }
 
 .hello .content {
-  margin: 8rem 10rem; }
+  padding: 5em;
+  background-color: var(--light-pink); }
 
 .hello .content h4 {
   letter-spacing: 0.2em;
@@ -46,14 +34,14 @@
 
 .goal {
   text-align: center;
-  padding: 4rem 12rem; }
+  padding: 2em; }
 
 .goal p {
   font-weight: 600;
   font-size: 1.4rem; }
 
 .help-list {
-  padding: 3rem 15rem;
+  padding: 5em;
   background-color: var(--light-pink); }
 
 .help-list h1 {
@@ -71,7 +59,7 @@
   padding-right: 1rem; }
 
 .story {
-  padding: 5rem 15rem; }
+  padding: 5em; }
 
 .story h1 {
   text-align: center; }
@@ -91,7 +79,7 @@
 
 .story h2 {
   text-align: center;
-  padding: 2rem 6rem; }
+  padding: 1.5rem; }
 
 .story a {
   color: black; }
@@ -100,26 +88,27 @@
   font-weight: 600; }
 
 .story .images {
-  margin-top: 1rem; }
+  margin-top: 2rem;
+  text-align: center; }
 
 .story .images img {
-  width: 49%;
-  height: auto; }
+  width: 100%; }
 
 .who-i-am {
-  padding: 5rem 15rem;
+  padding: 5em;
   border-top: 1px solid var(--light-pink); }
 
 .who-i-am h1 {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2rem; }
 
 .who-i-am p {
   font-size: 1.2rem;
-  padding-top: 2rem; }
-
-.flexed {
   padding-top: 2rem;
-  display: flex; }
+  padding-right: 1em; }
+
+.who-i-am .images img {
+  display: none; }
 
 .social-media {
   text-align: center;
