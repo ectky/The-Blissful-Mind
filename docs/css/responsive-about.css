@@ -31,3 +31,7 @@
   .who-i-am .images img {
     display: block;
     height: 100%; } }
+
+@media (min-width: 1024px) {
+  .about-wrapper {
+    width: -moz-available; } }
