@@ -1,0 +1,69 @@
+@media (min-width: 640px) {
+  html {
+    font-size: 12px; }
+  .site-nav nav {
+    display: flex;
+    justify-content: center; }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 3px 0px #858585; } }
+
+@media (min-width: 960px) {
+  html {
+    font-size: 14px; }
+  .site-header .site-title img {
+    height: 25vh;
+    width: 50vw; }
+  .site-header .socials {
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    margin: 0; }
+  .site-header .search-form input {
+    position: absolute;
+    top: 95px;
+    right: 47px;
+    height: 20px;
+    width: 15%; }
+  .search-btn {
+    position: absolute;
+    top: 98px;
+    right: 27px; }
+  .site-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em; }
+  .ig-pics ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-row-gap: 0.3em; }
+  .copyright {
+    grid-column: 1 / -1; } }
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px; }
+  .site {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+  .site-main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4em;
+    grid-template-areas: "content sidebar"; }
+  .site-header {
+    grid-area: header; }
+  .site-footer {
+    grid-area: footer; }
+  .post {
+    grid-area: content; }
+  .posts {
+    grid-area: content; }
+  .post-sidebar {
+    grid-area: sidebar; } }

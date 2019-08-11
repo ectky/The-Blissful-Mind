@@ -1,23 +1,8 @@
-.site {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 4em; }
-
-.site-main {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 4em; }
-
-.site-header {
-  grid-column: 1 / -1; }
-
 .site-header .site-title {
   text-align: center; }
 
 .site-header .site-title img {
-  height: 25vh;
-  width: 50vw;
+  width: 100%;
   opacity: 1;
   transition: opacity 1s ease-in-out; }
 
@@ -26,12 +11,13 @@
 
 .site-header .socials {
   display: flex;
-  position: absolute;
-  top: 95px;
-  left: 30px; }
+  justify-content: center;
+  margin: 1.5em 0; }
+
+.site-header .socials li:not(:last-child) {
+  padding-right: 2.5em; }
 
 .site-header .socials li {
-  padding-right: 2.5em;
   list-style: none; }
 
 .site-header .socials i {
@@ -45,12 +31,8 @@
 .site-header .search-form input {
   border: none;
   border: solid;
-  position: absolute;
-  top: 95px;
-  right: 47px;
-  height: 20px;
-  width: 15em;
-  border-width: 1.5px;
+  width: 50%;
+  border-width: 1.3px;
   border-color: #000;
   outline: none;
   padding: 0.2em;
@@ -63,17 +45,12 @@
 
 .search-btn {
   color: #000;
-  transition: color 0.5s ease-in-out;
-  position: absolute;
-  top: 98px;
-  right: 27px; }
+  transition: color 0.5s ease-in-out; }
 
 .search-btn:hover {
   color: var(--dark-grey); }
 
 .site-nav nav {
-  display: flex;
-  justify-content: center;
   padding: 2.5em 0;
   background-color: #fff;
   z-index: 1000000; }
@@ -83,7 +60,8 @@
   list-style: none; }
 
 .site-nav nav li:not(:last-child) {
-  padding-right: 1em; }
+  padding-right: 1em;
+  padding-bottom: 1em; }
 
 .site-nav nav a {
   text-decoration: none;
@@ -91,14 +69,8 @@
   color: #000;
   letter-spacing: 1px;
   font-weight: 500;
-  transition: color 0.5s ease-in-out; }
+  transition: color 0.5s ease-in-out;
+  margin: 0 auto; }
 
 .site-nav nav a:hover {
   color: var(--dark-grey); }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0px 1px 3px 0px #858585; }

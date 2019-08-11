@@ -1,21 +1,4 @@
-.blog-wrapper {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 4em;
-}
-
-.blog-wrapper li {
-    list-style: none;
-}
-
-.blog-wrapper a {
-    text-decoration: none;
-    color: #000;
-}
-
 .posts {
-    grid-column: 1 / -2;
     margin: 0 2em;
 }
 

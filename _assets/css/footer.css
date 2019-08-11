@@ -1,13 +1,11 @@
 .site-footer {
     grid-column: 1 / -1;
     background-color: var(--black-grey);
-    display: flex;
     padding: 2em 2em;
     padding-bottom: 0.5em;
     color: #fff;
     justify-content: space-evenly;
     font-weight: 400;
-    flex-wrap: wrap;
 }
 
 .site-footer h4 {
@@ -19,22 +17,15 @@
 }
 
 .site-map {
-    flex-basis: 30%;
     padding-right: 1em;
 }
 
 .search-privacy {
-    flex-basis: 30%;
     padding-right: 1em;
-}
-
-.ig-pics {
-    flex-basis: 30%;
 }
 
 .site-map .map li, .search-privacy .privacy li {
     list-style: none;
-    display: flex;
     border-bottom: 1px solid var(--dark-grey);
     padding-bottom: 1em;
 }
@@ -57,9 +48,8 @@
     text-transform: uppercase;
 }
 
-.search-privacy .search-footer {
+.search-privacy, .search-privacy .search-footer, .site-map {
     padding-bottom: 2em;
-    display: flex;
 }
 
 .search-privacy .search-footer input {
@@ -86,10 +76,6 @@
     padding-top: 1em;
 }
 
-.socials-footer li  {
-    list-style: none;
-}
-
 .socials-footer li:not(:last-child)  {
     padding-right: 2.5em;
 }
@@ -105,24 +91,16 @@
 }
 
 .copyright {
-    flex: 0 0 90%;
     text-align: center;
     color: var(--dark-grey);
     padding-top: 2em;
 }
 
 .ig-pics ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ig-pics ul li {
-    list-style: none;
-    flex: 0 0 30%;
-    padding: 0.3em;
-    
-    width: 60px;
-    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 120px;
+    grid-column-gap: 0.3em;
 }
 
 .ig-pics ul li img {
