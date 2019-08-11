@@ -1,7 +1,8 @@
 .blog-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 0 2rem; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 4em; }
 
 .blog-wrapper li {
   list-style: none; }
@@ -11,9 +12,8 @@
   color: #000; }
 
 .posts {
-  flex: 0 0 70%;
-  margin: 1em 2rem;
-  padding-bottom: 2em; }
+  grid-column: 1 / -2;
+  margin: 0 2em; }
 
 .posts h1 {
   font-size: 1.5rem;

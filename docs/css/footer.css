@@ -1,4 +1,5 @@
 .site-footer {
+  grid-column: 1 / -1;
   background-color: var(--black-grey);
   display: flex;
   padding: 2em 2em;

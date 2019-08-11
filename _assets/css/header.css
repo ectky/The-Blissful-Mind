@@ -1,3 +1,22 @@
+.site {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4em;
+}
+
+.site-main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4em;
+}
+
+.site-header {
+    grid-column: 1 / -1;
+}
+
+
+
 .site-header .site-title {
     text-align: center;
 }

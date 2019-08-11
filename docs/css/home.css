@@ -2,6 +2,9 @@ h1 {
   font-size: 3em;
   font-weight: 500; }
 
+.home-wrapper {
+  grid-column: 1 / -1; }
+
 .welcome {
   display: flex; }
 

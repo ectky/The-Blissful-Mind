@@ -18,118 +18,121 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <section class="site-title">
-            <ul class="socials ">
-                <li><a href={{ "https://www.facebook.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-facebook-f"></i></a></li>
-                <li><a href={{ "https://www.twitter.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-twitter"></i></a></li>
-                <li><a href={{ "https://www.instagram.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-instagram"></i></a></li>
-            </ul>
-            <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/The-Blissful-Mind-Logo-Mobile.png"
-                    alt="The-Blissful-Mind-Logo"></a>
-            <form class="search-form">
-                <input type="text" class="search" placeholder="Search...">
-                <a href="" class="search-btn"><i class="fas fa-search"></i></a>
-            </form>
-        </section>
+    <div class="site">
+        <header class="site-header">
+            <section class="site-title">
+                <ul class="socials ">
+                    <li><a href={{ "https://www.facebook.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href={{ "https://www.twitter.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href={{ "https://www.instagram.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+                <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/The-Blissful-Mind-Logo-Mobile.png"
+                        alt="The-Blissful-Mind-Logo"></a>
+                <form class="search-form">
+                    <input type="text" class="search" placeholder="Search...">
+                    <a href="" class="search-btn"><i class="fas fa-search"></i></a>
+                </form>
+            </section>
 
-        <section class="site-nav">
-            <nav id="navbar">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                {% for page in site.pages %}
-                {% if page.isFromNav and page.title %}
-                <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-                {% endfor %}
-            </nav>
-        </section>
-    </header>
+            <section class="site-nav">
+                <nav id="navbar">
+                    <li><a href="{{ site.baseurl }}/">Home</a></li>
+                    {% for page in site.pages %}
+                    {% if page.isFromNav and page.title %}
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </nav>
+            </section>
+        </header>
 
-    <main class="site-main">
-        {{content}}
-    </main>
+        <main class="site-main">
+            {{content}}
+        </main>
 
-    <footer class="site-footer">
-        <div class="search-privacy">
-            <h4>Search</h4>
-            <form class="search-footer">
-                <input type="text" name="search" id="search" placeholder="Search...">
-            </form>
+        <footer class="site-footer">
+            <div class="search-privacy">
+                <h4>Search</h4>
+                <form class="search-footer">
+                    <input type="text" name="search" id="search" placeholder="Search...">
+                </form>
 
-            <h4>Privacy</h4>
-            <ul class="privacy">
-                <li><a href="">Terms & Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
-        </div>
-
-        <div class="site-map">
-            <h4>Menu</h4>
-            <ul class="map">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                {% for page in site.pages %}
-                {% if page.isFromNav and page.title %}
-                <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="ig-widget">
-            <h4>instagram</h4>
-
-            <div class="ig-pics">
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/p/BykF_STF6r3/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-1.jpg" alt="instagram picture">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/BxkCgiuFde9/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-2.jpg" alt="instagram picture">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/BvpmnkLF9DP/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-3.jpg" alt="instagram picture">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/Bt9DU-6l6A9/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-4.jpg" alt="instagram picture">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/Bo7EvGkHWwP/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-5.jpg" alt="instagram picture">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/p/By5uaIQFc1g/?utm_source=ig_web_copy_link">
-                            <img src="{{ site.baseurl }}/images/ig-6.jpg" alt="instagram picture">
-                        </a>
-                    </li>
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
                 </ul>
             </div>
 
-            <ul class="socials-footer">
-                <li><a href={{ "https://www.facebook.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-facebook-f"></i></a></li>
-                <li><a href={{ "https://www.twitter.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-twitter"></i></a></li>
-                <li><a href={{ "https://www.instagram.com/" | append: {{site.twitter_username}} }}><i
-                            class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
+            <div class="site-map">
+                <h4>Menu</h4>
+                <ul class="map">
+                    <li><a href="{{ site.baseurl }}/">Home</a></li>
+                    {% for page in site.pages %}
+                    {% if page.isFromNav and page.title %}
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
 
-        <div class="copyright">
-            <p>© The Blissful Mind 2019</p>
-        </div>
-    </footer>
+            <div class="ig-widget">
+                <h4>instagram</h4>
+
+                <div class="ig-pics">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/p/BykF_STF6r3/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-1.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BxkCgiuFde9/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-2.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BvpmnkLF9DP/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-3.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/Bt9DU-6l6A9/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-4.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/Bo7EvGkHWwP/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-5.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/By5uaIQFc1g/?utm_source=ig_web_copy_link">
+                                <img src="{{ site.baseurl }}/images/ig-6.jpg" alt="instagram picture">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="socials-footer">
+                    <li><a href={{ "https://www.facebook.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href={{ "https://www.twitter.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href={{ "https://www.instagram.com/" | append: {{site.twitter_username}} }}><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>© The Blissful Mind 2019</p>
+            </div>
+        </footer>
+
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/script.js"></script>
 </body>

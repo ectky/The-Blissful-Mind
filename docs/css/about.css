@@ -1,3 +1,6 @@
+.about-wrapper {
+  grid-column: 1 / -1; }
+
 .hello {
   display: flex; }
 
