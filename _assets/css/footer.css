@@ -37,7 +37,6 @@
 .site-map .map a, .search-privacy .privacy a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.5s ease-in-out;
 }
 
 .site-map .map a:hover, .search-privacy .privacy a:hover {
@@ -63,7 +62,6 @@
     padding: 0.3em;
     font-style: italic;
     outline: none;
-    transition: font-size 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .search-privacy .search-footer input:hover {
@@ -83,7 +81,6 @@
 .socials-footer i {
     font-size: 1.5em;
     color: #fff;
-    transition: color 0.5s ease-in-out;
 }
 
 .socials-footer i:hover {

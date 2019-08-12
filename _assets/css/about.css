@@ -102,6 +102,7 @@
 }
 
 .story a {
+    text-decoration: underline;
     color: black;
 }
 
@@ -156,7 +157,6 @@
     margin-top: 2rem;
     background-color: white;
     border-radius: 50%;
-    transition: all 0.5s ease-in-out;
 }
 
 .social-media .socials li:not(:last-child) {
@@ -166,7 +166,6 @@
 .social-media .socials a {
     text-decoration: none;
     color: black;
-    transition: all 0.5s ease-in-out;
 }
 
 .social-media .socials li:hover {

@@ -30,8 +30,7 @@
 
 .site-map .map a, .search-privacy .privacy a {
   text-decoration: none;
-  color: #fff;
-  transition: color 0.5s ease-in-out; }
+  color: #fff; }
 
 .site-map .map a:hover, .search-privacy .privacy a:hover {
   color: var(--dark-grey); }
@@ -52,8 +51,7 @@
   width: 100%;
   padding: 0.3em;
   font-style: italic;
-  outline: none;
-  transition: font-size 0.5s ease-in-out, height 0.5s ease-in-out; }
+  outline: none; }
 
 .search-privacy .search-footer input:hover {
   font-size: 1em; }
@@ -68,8 +66,7 @@
 
 .socials-footer i {
   font-size: 1.5em;
-  color: #fff;
-  transition: color 0.5s ease-in-out; }
+  color: #fff; }
 
 .socials-footer i:hover {
   color: var(--dark-grey); }

@@ -58,7 +58,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .welcome .content a:hover {
@@ -117,7 +116,6 @@ h1 {
     letter-spacing: 0.1em;
     color: black;
     font-style: normal;
-    transition: all 0.5s ease-in-out;
 }
 
 .free-planner .planner input[type="submit"]:hover {
@@ -150,7 +148,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .introduction a:hover {
@@ -194,7 +191,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 
 .new-in-blog .btn:hover {
@@ -305,7 +301,6 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
     margin-top: 5rem;
 }
 
@@ -380,7 +375,6 @@ h1 {
     letter-spacing: 0.2em;
     font-size: 0.8rem;
     font-style: normal;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .subscribe .content input[type="submit"]:hover {

@@ -42,8 +42,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.8rem;
-  font-style: normal;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
+  font-style: normal; }
 
 .contact .send-message input[type="submit"]:hover {
   background-color: white;
@@ -58,8 +57,7 @@
 
 .contact .socials i {
   font-size: 1em;
-  color: #000;
-  transition: color 0.5s ease-in-out; }
+  color: #000; }
 
 .contact .socials i:hover {
   color: var(--dark-grey); }

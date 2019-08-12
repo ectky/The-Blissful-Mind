@@ -83,7 +83,6 @@ a {
 .post-sidebar .about-me img {
     border-radius: 50%;
     margin: 1em 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .post-sidebar .about-me img:hover {
@@ -116,7 +115,6 @@ a {
 .post-sidebar .socials i {
     font-size: 1.5em;
     color: #000;
-    transition: color 0.5s ease-in-out;
 }
 
 .post-sidebar .socials i:hover {
@@ -173,7 +171,6 @@ a {
     width: 80px;
     height: 50px;
     padding-right: 0.4em;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .post-sidebar .latest-posts a:hover img {

@@ -1,0 +1,48 @@
+@keyframes slideLeft {
+    100% { left: 0; }
+}
+
+.resources .animatedUl > li {
+    opacity: 1;
+    position: relative;
+    left: -400%;
+    animation: slideLeft 1s forwards;
+}
+
+.resources .animatedUl > li:nth-of-type(1) { animation-delay: 0.1s;}
+.resources .animatedUl > li:nth-of-type(2) { animation-delay: 0.3s;}
+.resources .animatedUl > li:nth-of-type(3) { animation-delay: 0.5s;}
+.resources .animatedUl > li:nth-of-type(4) { animation-delay: 0.7s;}
+.resources .animatedUl > li:nth-of-type(5) { animation-delay: 0.9s;}
+.resources .animatedUl > li:nth-of-type(6) { animation-delay: 1.1s;}
+
+
+.back-to-top,
+.site-header .site-title img ,
+.site-header .socials i,
+.site-header .search-form input,
+.search-btn,
+.site-nav nav a,
+.site-map .map a, .search-privacy .privacy a,
+.search-privacy .search-footer input,
+.socials-footer i,
+.welcome .content a,
+.free-planner .planner input[type="submit"],
+.introduction a,
+.new-in-blog .btn,
+.self-care .content a,
+.subscribe .content input[type="submit"],
+.social-media .socials li,
+.social-media .socials a,
+.posts .image img,
+.posts .content p a,
+.contact .send-message input[type="submit"],
+.contact .socials i,
+.ebook-header .content a,
+.ebook-wrapper .intro a,
+.ebook-wrapper .buy a,
+.post-sidebar .about-me img,
+.post-sidebar .socials i,
+.post-sidebar .latest-posts img {
+    transition: all 0.5s ease-in-out;
+}

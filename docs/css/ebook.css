@@ -27,8 +27,7 @@
   padding: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.8rem;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
+  font-size: 0.8rem; }
 
 .ebook-header .content a:hover {
   background-color: black;
@@ -71,8 +70,7 @@
   padding: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.9rem;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
+  font-size: 0.9rem; }
 
 .ebook-wrapper .intro a:hover {
   background-color: var(--dark-pink);
@@ -116,8 +114,7 @@
   padding: 1em 0; }
 
 .ebook-wrapper .buy img {
-  margin: 0 auto;
-  width: 40%; }
+  margin: 0 auto; }
 
 .ebook-wrapper .buy a {
   display: inline-block;
@@ -128,8 +125,7 @@
   padding: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.9rem;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; }
+  font-size: 0.9rem; }
 
 .ebook-wrapper .buy a:hover {
   background-color: black;

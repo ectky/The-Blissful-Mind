@@ -33,7 +33,6 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.8rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .ebook-header .content a:hover {
@@ -86,7 +85,6 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.9rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .ebook-wrapper .intro a:hover {
@@ -143,7 +141,6 @@
 
 .ebook-wrapper .buy img {
     margin: 0 auto;
-    width: 40%;
 }
 
 .ebook-wrapper .buy a {
@@ -156,7 +153,6 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.9rem;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .ebook-wrapper .buy a:hover {

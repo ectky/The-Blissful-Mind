@@ -52,7 +52,6 @@
     letter-spacing: 0.2em;
     font-size: 0.8rem;
     font-style: normal;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .contact .send-message input[type="submit"]:hover {
@@ -73,7 +72,6 @@
 .contact .socials i {
     font-size: 1em;
     color: #000;
-    transition: color 0.5s ease-in-out;
 }
 
 .contact .socials i:hover {

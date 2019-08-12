@@ -1,2 +1,61 @@
 .resources-wrapper {
   grid-column: 1 / -1; }
+
+.resources-header {
+  background: url("../images/Life-Organized-Featured.jpg") center center no-repeat; }
+
+.resources-header .content {
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem; }
+
+.resources-header .content h1 {
+  padding-bottom: 1em; }
+
+.resources-header .content h1::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  background-color: black; }
+
+.resources-header .content p {
+  margin: 1em 5em;
+  margin-bottom: 2em; }
+
+.resources {
+  padding: 5em; }
+
+.resources .categories h3 {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  text-align: center; }
+
+.resources .categories > li {
+  opacity: 0; }
+
+.resources .categories li:not(:last-child) {
+  padding-bottom: 2em; }
+
+.resources .categories .elements li:not(:last-child) {
+  padding-bottom: 1em; }
+
+.resources .categories .elements li {
+  padding-left: 1em; }
+
+.resources .categories .elements {
+  transform: translateY(0.1%);
+  height: 80%; }
+
+.resources .categories .elements::before {
+  content: '';
+  display: block;
+  width: 2px;
+  min-height: 100%;
+  background-color: var(--dark-pink);
+  position: absolute; }

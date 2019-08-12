@@ -21,7 +21,6 @@
 
 .posts .image img {
     width: 100%;
-    transition: all 0.5s ease-in-out; 
 }
 
 .posts .image:hover img {
@@ -58,7 +57,6 @@
     text-transform: capitalize;
     color: var(--dark-pink);
     padding-right: 0.3em;
-    transition: all 0.5s ease-in-out;
 }
 
 .posts .content p a:hover {

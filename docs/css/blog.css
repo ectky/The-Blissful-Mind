@@ -16,8 +16,7 @@
   padding-bottom: 2em; }
 
 .posts .image img {
-  width: 100%;
-  transition: all 0.5s ease-in-out; }
+  width: 100%; }
 
 .posts .image:hover img {
   opacity: 0.7;
@@ -47,8 +46,7 @@
 .posts .content p a {
   text-transform: capitalize;
   color: var(--dark-pink);
-  padding-right: 0.3em;
-  transition: all 0.5s ease-in-out; }
+  padding-right: 0.3em; }
 
 .posts .content p a:hover {
   color: #000; }

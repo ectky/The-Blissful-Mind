@@ -82,6 +82,7 @@
   padding: 1.5rem; }
 
 .story a {
+  text-decoration: underline;
   color: black; }
 
 .bold {
@@ -125,16 +126,14 @@
   list-style: none;
   margin-top: 2rem;
   background-color: white;
-  border-radius: 50%;
-  transition: all 0.5s ease-in-out; }
+  border-radius: 50%; }
 
 .social-media .socials li:not(:last-child) {
   margin-right: 2em; }
 
 .social-media .socials a {
   text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in-out; }
+  color: black; }
 
 .social-media .socials li:hover {
   background-color: black; }
