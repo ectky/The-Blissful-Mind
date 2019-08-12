@@ -2,6 +2,29 @@
     100% { left: 0; }
 }
 
+@keyframes slideRight {
+    100% { right: 0; }
+}
+
+@keyframes slideUp {
+    100% { bottom: 0; }
+}
+
+@keyframes slideDown {
+    100% { top: 0; }
+}
+
+body.loaded .site-header {
+    opacity: 1;
+    animation: slideLeft 1s forwards;
+}
+
+
+body.loaded .site-main {
+    opacity: 1;
+    animation: slideUp 1s forwards;
+}
+
 .resources .animatedUl > li {
     opacity: 1;
     position: relative;

@@ -18,13 +18,29 @@
     padding-left: 0.5em;
 }
 
+
+
+.site-main {
+    opacity: 0;
+    position: relative;
+    bottom: -400%;
+}
+
+
+
+
+.site-header {
+    opacity: 0;
+    position: relative;
+    left: -400%;
+}
+
 .site-header .site-title {
     text-align: center;
 }
 
-.site-header .site-title img {
+.site-header .site-title a img {
     width: 100%;
-    opacity: 1;
 }
 
 .site-header .site-title img:hover {

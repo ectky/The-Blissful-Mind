@@ -1,3 +1,7 @@
+window.addEventListener('load', (event) => {
+  document.getElementsByTagName('body')[0].classList.add('loaded');
+});
+
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {scrollPage()};
 

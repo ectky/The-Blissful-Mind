@@ -28,7 +28,7 @@
 @media (min-width: 960px) {
   html {
     font-size: 14px; }
-  .site-header .site-title img {
+  .site-header .site-title a img {
     height: 25vh;
     width: 50vw; }
   .site-header .socials {
