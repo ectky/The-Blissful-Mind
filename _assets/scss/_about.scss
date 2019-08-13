@@ -4,6 +4,16 @@
     @include bp(laptop){
         width: -moz-available;
     }
+
+    .story h1::after, .who-i-am h1::after, .social-media h1::after {
+        content: '';
+        background-color: black;
+        width: 4rem;
+        height: 1px;
+        display: block;
+        margin-top: 1em;
+        margin: 0 auto;
+    }
 }
 
 .hello {
@@ -116,16 +126,6 @@
 
     h1 {
         text-align: center;
-    }
-
-    h1::after, .who-i-am h1::after, .social-media h1::after {
-        content: '';
-        background-color: black;
-        width: 4rem;
-        height: 1px;
-        display: block;
-        margin-top: 1em;
-        margin: 0 auto;
     }
 
     p {

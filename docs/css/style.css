@@ -680,6 +680,14 @@ a {
   @media (min-width: 1024px) {
     .about-wrapper {
       width: -moz-available; } }
+  .about-wrapper .story h1::after, .about-wrapper .who-i-am h1::after, .about-wrapper .social-media h1::after {
+    content: '';
+    background-color: black;
+    width: 4rem;
+    height: 1px;
+    display: block;
+    margin-top: 1em;
+    margin: 0 auto; }
 
 .hello .image img {
   display: none; }
@@ -755,14 +763,6 @@ a {
       padding: 2rem 6rem; } }
   .story h1 {
     text-align: center; }
-  .story h1::after, .story .who-i-am h1::after, .story .social-media h1::after {
-    content: '';
-    background-color: black;
-    width: 4rem;
-    height: 1px;
-    display: block;
-    margin-top: 1em;
-    margin: 0 auto; }
   .story p {
     margin-top: 2rem;
     font-size: 1.2rem; }
