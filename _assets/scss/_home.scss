@@ -1,0 +1,475 @@
+.home-wrapper {
+    grid-column: 1 / -1;
+}
+
+.welcome {
+    @include bp(mobile){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        padding: 5em;
+        background-color: var(--light-pink);
+
+        h1 {
+            font-size: 3em;
+            font-weight: 500;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+        
+            &::after {
+                content: '';
+                background-color: black;
+                width: 4rem;
+                height: 1px;
+                display: block;
+                margin-top: 1em;
+            }
+        }
+
+        h4 {
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            padding-bottom: 1.5em;
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    .image {
+        background: url('../images/IMG_8431.jpg');
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+.free-planner {
+    padding: 2rem 3rem;
+
+    @include bp(phone){
+        display: flex;
+        justify-content: center;
+
+        .planner {
+            flex-wrap: wrap;
+        }
+    }
+
+    .image {
+        background: url('../images/Self-Care-MockUp.png') center center no-repeat;
+        background-size: auto;
+        overflow: hidden;
+        flex-basis: 50%;
+        border-radius: 2px;
+        max-width: 200px;
+    }
+
+    .planner {
+        text-align: center;
+
+        form {
+            padding-bottom: 5rem;
+        }
+
+        h2 {
+            padding-bottom: 3rem;
+            margin-top: 3rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        p {
+            padding-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+
+        input {
+            width: 90%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            font-style: italic;
+
+            @include bp(mobile){
+                height: 1rem;
+                width: 17rem;
+            }
+        }
+
+        input[type="submit"] {
+            width: 20%;
+            border: none;
+            text-transform: uppercase;
+            background: var(--light-pink);
+            padding: 0.6rem 1.5rem;
+            letter-spacing: 0.1em;
+            color: black;
+            font-style: normal;
+
+            @include bp(laptop) {
+                width: 10%;
+            }
+
+            &:hover {
+                color: white;
+                background-color: var(--dark-grey);
+            }
+        }
+    }
+}
+
+.introduction {
+    background-color: var(--light-pink);
+    padding: 5em;
+
+    @include bp(mobile){
+        display: flex;
+
+        .content {
+            margin-left: 2em;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        padding-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: black;
+        color: #fff;
+        padding: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.8rem;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    @include bp(phone) {
+        .image {
+            background: url('../images/aboutMe.jpg') center top no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            min-width: 400px;
+            min-height: 400px;
+        }
+    }
+}
+
+.new-in-blog {
+    text-align: center;
+    padding: 5em;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+
+        &::after {
+            content: '';
+            background-color: black;
+            width: 80%;
+            height: 1px;
+            display: block;
+            margin-top: 1em;
+            margin: 1em auto;
+        }
+    }
+
+    h4 {
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        text-decoration: none;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        padding: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.8rem;
+
+        &:hover {
+            background-color: var(--light-pink);
+            border-color: var(--light-pink);
+        }
+    }
+
+    i {
+        padding-left: 1em;
+        color: black;
+    }
+
+    ul {
+        margin: 2.5em 0;
+
+        @include bp(mobile){
+            display: flex;
+            justify-content: center;
+            
+            li {
+                flex-basis: 30%;
+        
+                &:not(:last-child) {
+                    margin-right: 1em;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        li {
+            box-shadow: 0px 0px 8px 0px rgba(204,190,204,1);
+            transition: box-shadow 0.5s ease-in-out;
+            text-align: left;
+            min-width: 200px;
+            max-width: 70%;
+            min-height: 100%;
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: 0px 0px 15px 4px rgba(204,190,204,1);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2em;
+            }
+        }
+
+        img {
+            display: block;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            width: 100%;
+            height: auto;  
+        }
+    }
+
+    .image {   
+        display: block;
+        position: relative;
+        overflow: hidden; 
+
+        &:before {
+            content: '';
+            padding-top: 53%;
+            display: block;
+          }
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    p {
+        margin:  1rem 0;
+    }
+
+    .content {
+        padding: 1.5rem 2rem;
+    }
+    
+}
+
+.self-care {
+    @include bp(mobile){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .image {
+            background: url('../images/mockup-1.jpg');
+            overflow: hidden;
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .content {
+        padding: 5em;
+        background-color: var(--light-pink);
+
+        h4 {
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            padding-bottom: 1.5em;
+            font-weight: 400;
+
+            &::after {
+                content: '';
+                background-color: black;
+                width: 4rem;
+                height: 1px;
+                display: block;
+                margin-top: 1em;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            margin-top: 5rem;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    ul {
+        padding-bottom: 2rem;
+
+        li {
+            padding-bottom: 1rem;
+            list-style: none;
+        }
+
+        i {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.subscribe {
+    @include bp(phone) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include bp(mobile){
+        .content {
+            border: none;
+        }
+    }
+
+    .content {
+        padding: 5em;
+        background-color: var(--light-pink);
+        text-align: center;
+        border-top: 1px solid var(--dark-grey);
+
+        h4 {
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            padding-bottom: 1.5em;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 500;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+
+            &::after {
+                content: '';
+                background-color: black;
+                width: 4rem;
+                height: 1px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 1em;
+            }
+        }
+
+        input[type="submit"] {
+            border: none;
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            font-style: normal;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    .image {
+        flex-basis: 45%;
+        background: url('../images/Monthly-Planning-IMG-7.jpg');
+        overflow: hidden;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        input {
+            height: 1rem;
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-style: italic;
+            margin-right: 0.5rem;
+            margin-bottom: 2em;
+        }
+    }
+}

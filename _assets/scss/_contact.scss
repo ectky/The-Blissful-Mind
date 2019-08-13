@@ -1,0 +1,101 @@
+.contact-wrapper {
+    grid-column: 1 / -1;
+
+    @include bp(phone){
+        .contact {
+            padding: 5em 8em;
+        } 
+    }
+
+    @include bp(mobile){
+        .contact {
+            display: flex;
+            justify-content: space-between;
+
+            .content {
+                flex-basis: 45%
+            }
+
+            .send-message {
+                flex-basis: 45%
+            }
+        }
+    }
+
+    .contact {
+        background-color: var(--light-pink);
+        padding: 5em;
+
+        .content {
+            padding-bottom: 2em;
+    
+            h1 {
+                font-size: 2.5em;
+                font-weight: 500;
+                margin-bottom: 0.5em;
+            }
+    
+            p {
+                padding-bottom: 2em;
+    
+                span {
+                    font-weight: 600;
+                }
+    
+                a {
+                    color: black;
+                }
+            }
+        }
+    
+        .send-message {
+            input, textarea{
+                border: none;
+                border: 1px solid var(--dark-grey);
+                width: 100%;
+                font-size: 1rem;
+                padding: 0.5em;
+                margin-bottom: 0.5em;
+                font-style: italic;
+            }
+    
+            textarea {
+                resize: none;
+            }
+    
+            input[type="submit"] {
+                border: none;
+                background-color: black;
+                color: #fff;
+                padding: 0.8em;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-size: 0.8rem;
+                font-style: normal;
+    
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    
+        .socials {
+            display: flex;
+    
+            li  {
+                padding-right: 1.5em;
+                list-style: none;
+            }
+    
+            i {
+                font-size: 1em;
+                color: #000;
+    
+                &:hover {
+                    color: var(--dark-grey);
+                }
+            }
+        }
+    }
+}

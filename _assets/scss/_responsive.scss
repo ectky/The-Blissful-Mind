@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+    .welcome .content, .introduction, .new-in-blog, .self-care .content,
+    .hello .content, .help-list, .story, .who-i-am,
+    .ebook-wrapper  .good-news,.ebook-wrapper .intro,.ebook-wrapper .faq,.ebook-wrapper .buy, .resources {
+        padding: 5em 8em;
+    }
+}
+
+@media (min-width: 960px) {
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 1px 3px 0px rgba(133,133,133,1);
+    }
+
+    .flexed {
+        padding-top: 2rem;
+        display: flex;
+    }
+}

@@ -6,6 +6,12 @@
     color: #fff;
     justify-content: space-evenly;
     font-weight: 400;
+
+    @include bp(mobile) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2em;
+    }
 }
 
 .site-footer h4 {
@@ -91,6 +97,10 @@
     text-align: center;
     color: var(--dark-grey);
     padding-top: 2em;
+
+    @include bp(mobile) {
+        grid-column: 1 / -1;
+    }
 }
 
 .ig-pics ul {
@@ -98,6 +108,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 100px);
     grid-gap: 0.3em;
+
+    @include bp (laptop) {
+        grid-template-rows: repeat(2, 150px);
+    }
 }
 
 .ig-pics ul li img {

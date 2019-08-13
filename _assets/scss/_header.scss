@@ -1,0 +1,149 @@
+.back-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: var(--black-grey);
+    border-radius: 3px;
+    padding: 0.5em 0.8em;
+    color: white;
+    z-index: 1000;
+
+    &:hover {
+        background-color: var(--dark-pink);
+        color: var(--black-grey);
+    }
+
+    i {
+        padding-left: 0.5em;
+    }
+}
+
+.site {
+    &-main {
+        opacity: 0;
+        position: relative;
+        bottom: -1000%;
+    }
+    
+    &-header {
+        opacity: 0;
+        position: relative;
+        left: -400%;
+
+        .site-title {
+            text-align: center;
+
+            a img {
+                width: 100%;
+
+                @include bp(mobile) {
+                    height: 25vh;
+                    width: 50vw;
+                }
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin: 1.5em 0;
+
+            @include bp(mobile){
+                position: absolute;
+                top: 95px;
+                left: 30px;
+                margin: 0;
+            }
+
+            li:not(:last-child)  {
+                padding-right: 2.5em;
+            }
+
+            i {
+                font-size: 1.5em;
+                color: #000;
+
+                &:hover {
+                    color: var(--dark-grey);
+                }
+            }
+        }
+
+        .search-form input{
+            border: none;
+            border: solid;
+            width: 50%;
+            border-width: 1.3px;
+            border-color: #000;
+            outline: none;
+            padding: 0.2em;
+            font-style: italic;
+            font-size: 0.8em;
+
+            @include bp(mobile){
+                position: absolute;
+                top: 95px;
+                right: 47px;
+                height: 20px;
+                width: 15%;
+            }
+
+            &:hover {
+                border-color: var(--dark-grey);
+            }
+        }
+
+        .search-btn {
+            color: #000;
+
+            @include bp(mobile) {
+                position: absolute;
+                top: 98px;
+                right: 27px;
+            }
+
+            &:hover {
+                color: var(--dark-grey);
+            }
+        }
+
+        .site-nav nav {
+            padding: 2.5em 0;
+            background-color: #fff;
+            z-index: 1000000;
+
+            @include bp(mobile) {
+                display: flex;
+                justify-content:center;
+            }
+
+            li {
+                display: flex;
+                list-style: none;
+
+                &:not(:last-child) {
+                    padding-right: 1em;
+                    padding-bottom: 1em;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #000;
+                letter-spacing: 1px;
+                font-weight: 500;
+                margin: 0 auto;
+
+                &:hover {
+                    color: var(--dark-grey);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+.ebook-wrapper {
+    grid-column: 1 / -1;
+
+    @include bp(mobile) {
+        .ebook-header {
+            padding: 30vh;
+        }
+        
+        .self-care .img {
+            margin:  5em auto;
+        }
+        
+        .self-care img {
+            display: block;
+            width: 130%;
+            height: 100%;
+        }
+    
+        .faq ul {
+            columns: 2;
+        }
+    }
+
+    .ebook-header {
+        background: url('../images/Start-day-with-clarity-feat-Copy-2.jpg') center center no-repeat;
+    
+        .content {
+            background-color: white;
+            opacity: 0.8;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 3rem;
+    
+            h1 {
+                padding-bottom: 1em;
+            }
+    
+            p {
+                text-transform: uppercase;
+                margin: 1em 5em;
+                margin-bottom: 2em;
+            }
+    
+            a {
+                text-decoration: none;
+                background-color: var(--dark-pink);
+                color: #000;
+                padding: 0.8em;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-size: 0.8rem;
+    
+                &:hover {
+                    background-color: black;
+                    color: var(--dark-pink);
+                }
+            }
+        }
+    }
+
+    .good-news {
+        background-color: var(--light-pink);
+        padding: 5em;
+    
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+            padding-bottom: 1em;
+            margin: 0 auto;
+        }
+    }
+
+    .intro {
+        padding: 5em;
+        text-align: center;
+    
+        img {
+            width: 100%;
+        }
+    
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            padding-bottom: 1em;
+        }
+    
+        p {
+            padding: 1em 0;
+        }
+    
+        a {
+            display: inline-block;
+            margin: 1em;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.9rem;
+    
+            &:hover {
+                background-color: var(--dark-pink);
+                color: black;
+            }
+        }
+    }
+
+    .self-care {
+        background-color: var(--light-pink);
+    
+        h3 {
+            text-transform: uppercase;
+            padding-bottom: 2em;
+        }
+    
+        img {
+            display: none;
+        }
+    }
+
+    .faq {
+        padding: 5em;
+    
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            padding-bottom: 1em;
+            text-align: center;
+        }
+    
+        li {
+            list-style: none;
+            padding-bottom: 1em;
+    
+            h4 {
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+
+    .buy {
+        background-color: var(--light-pink);
+        padding: 5em;
+    
+        .content {
+            margin: 0 auto;
+            text-align: center;
+    
+            p {
+                padding: 1em 0;
+            }
+        }
+    
+        img {
+            margin: 0 auto;
+        }
+    
+        a {
+            display: inline-block;
+            margin-top: 1em;
+            text-decoration: none;
+            background-color: var(--dark-pink);
+            color: black;
+            padding: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.9rem;
+    
+            &:hover {
+                background-color: black;
+                color: var(--dark-pink);
+            }
+        }
+    }
+}

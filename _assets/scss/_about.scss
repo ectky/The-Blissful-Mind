@@ -1,0 +1,229 @@
+.about-wrapper {
+    grid-column: 1 / -1;
+
+    @include bp(laptop){
+        width: -moz-available;
+    }
+}
+
+.hello {
+    @include bp(mobile){
+        display: flex;
+    
+        .content {
+            background-color: white;
+        }
+    
+        .image {
+            background-color: var(--light-pink);
+            width: 140vw;
+
+            img {
+                display: block;
+                position: relative;
+                top: 50%;
+                left: 15%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: auto;  
+            }
+        }
+    }
+
+    .image img {
+        display: none;
+    }
+
+    .content {
+        padding: 5em;
+        background-color: var(--light-pink);
+
+        h4 {
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding-bottom: 1.5em;
+            font-weight: 400;
+            font-size: 0.9rem;
+
+            &::after {
+                content: '';
+                background-color: black;
+                width: 4rem;
+                height: 1px;
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 500;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+        
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.goal {
+    text-align: center;
+    padding: 2em;
+
+    @include bp(phone){
+        padding: 4rem 12rem;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+}
+
+.help-list {
+    padding: 5em;
+    background-color: var(--light-pink);
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        padding: 2rem 0;
+
+        li {
+            padding-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+
+        i {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.story {
+    padding: 5em;
+
+    @include bp(phone) {
+        h2 {
+            padding: 2rem 6rem;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h1::after, .who-i-am h1::after, .social-media h1::after {
+        content: '';
+        background-color: black;
+        width: 4rem;
+        height: 1px;
+        display: block;
+        margin-top: 1em;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    .images {
+        margin-top: 2rem;
+        text-align: center;
+
+        img {
+            width: 100%;
+
+            @include bp(phone){
+                width: 49%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.who-i-am {
+    padding: 5em;
+    border-top: 1px solid var(--light-pink);
+
+    @include bp(mobile) {
+        img {
+            display: block;
+            height: 100%;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        padding-right: 1em;
+    }
+
+    img {
+        display: none;
+    }
+    
+}
+
+.social-media {
+    text-align: center;
+    background-color: var(--light-pink);
+    padding: 2rem 0;
+
+    .socials {
+        display: flex;
+        font-size: 1.7rem;
+        justify-content: center;
+        padding-bottom: 2rem;
+
+        li {
+            margin-top: 2rem;
+            background-color: white;
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: 2em;
+            }
+
+            &:hover {
+                background-color: black;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li:hover a {
+            color: white;
+        }
+
+        i {
+            width: 2em;
+            height: 1em;
+            padding: 0.5em 0;
+        }
+    }
+}

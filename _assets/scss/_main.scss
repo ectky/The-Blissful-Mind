@@ -1,0 +1,46 @@
+.site {
+    @include bp(laptop){
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 4em;
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "footer footer";
+
+        &-main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: 4em;
+            grid-template-areas: "content sidebar";
+        }
+
+        &-header {
+            grid-area: header;
+        }
+
+        &-footer {
+            grid-area: footer;
+        }
+    }
+}
+
+h1 {
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
