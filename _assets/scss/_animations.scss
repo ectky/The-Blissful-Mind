@@ -37,7 +37,7 @@ body.loaded {
     animation: slideLeft 1s forwards;
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 6 {
     .resources .animatedUl > li:nth-of-type(#{$i}) {
         animation-delay: $i * 0.1s + 0.1s;
   }

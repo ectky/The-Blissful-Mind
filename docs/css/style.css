@@ -1293,6 +1293,14 @@ body.loaded .back-to-top {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s; }
 
+.resources .animatedUl > li:nth-of-type(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; }
+
+.resources .animatedUl > li:nth-of-type(6) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s; }
+
 .back-to-top,
 .site-header .site-title img,
 .site-header .socials i,
