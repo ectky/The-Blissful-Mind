@@ -1148,20 +1148,6 @@ a {
 
 .resources-header {
   background: url("../images/Life-Organized-Featured.jpg") center center no-repeat; }
-  @media (min-width: 650px) {
-    .resources-header .categories {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 4em; }
-    .resources-header .categories > li:not(:last-child) {
-      padding: 0; } }
-  @media (min-width: 960px) {
-    .resources-header .categories {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-gap: 4em; } }
   .resources-header .content {
     background-color: white;
     opacity: 0.8;
@@ -1185,6 +1171,20 @@ a {
 
 .resources {
   padding: 5em; }
+  @media (min-width: 650px) {
+    .resources .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 4em; }
+    .resources .categories > li:not(:last-child) {
+      padding: 0; } }
+  @media (min-width: 960px) {
+    .resources .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 4em; } }
   .resources .categories h3 {
     text-transform: uppercase;
     padding-bottom: 1em;
