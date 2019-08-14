@@ -898,10 +898,11 @@ a {
     display: flex;
     text-transform: capitalize; }
     .post-sidebar .latest-posts a .post-link {
+      transform: translateY(40%);
       font-size: 1rem;
       padding-left: 1em; }
   .post-sidebar .latest-posts img {
-    width: 30%;
+    max-width: 30%;
     height: auto;
     padding-right: 0.4em; }
   .post-sidebar .latest-posts a:hover img {
@@ -927,7 +928,6 @@ a {
       font-style: italic; }
   @media (min-width: 650px) {
     .post-sidebar .latest-posts a .post-link {
-      transform: translateY(40%);
       font-size: 1.3rem; }
     .post-sidebar .categories a {
       font-size: 1.3rem; } }
