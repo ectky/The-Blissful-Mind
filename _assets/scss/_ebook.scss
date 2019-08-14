@@ -1,28 +1,9 @@
 .ebook-wrapper {
     grid-column: 1 / -1;
 
-    @include bp(mobile) {
-        .ebook-header {
-            padding: 30vh;
-        }
-        
-        .self-care .img {
-            margin:  5em auto;
-        }
-        
-        .self-care img {
-            display: block;
-            width: 130%;
-            height: 100%;
-        }
-    
-        .faq ul {
-            columns: 2;
-        }
-    }
-
     .ebook-header {
         background: url('../images/Start-day-with-clarity-feat-Copy-2.jpg') center center no-repeat;
+        background-size: cover;
     
         .content {
             background-color: white;
@@ -172,6 +153,26 @@
                 background-color: black;
                 color: var(--dark-pink);
             }
+        }
+    }
+
+    @include bp(mobile) {
+        .ebook-header {
+            padding: 30vh;
+        }
+        
+        .self-care .img {
+            margin:  5em auto;
+        }
+        
+        .self-care img {
+            display: block;
+            width: 130%;
+            height: 100%;
+        }
+    
+        .faq ul {
+            columns: 2;
         }
     }
 }

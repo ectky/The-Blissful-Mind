@@ -1,6 +1,6 @@
 @mixin bp($point) {
 
-    @if $point == desktop-large {
+    @if $point == desktoplarge {
         @media (min-width: 1600px) {
             @content;
         }

@@ -18,9 +18,6 @@ html {
   @media (min-width: 1250px) {
     html {
       font-size: 18px; } }
-  @media (min-width: 1600px) {
-    html {
-      font-size: 20px; } }
 
 h1, h2 {
   font-family: "Playfair Display", Sans-serif; }
@@ -35,23 +32,6 @@ input, textarea {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
-
-@media (min-width: 1024px) {
-  .site {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 4em;
-    grid-template-areas: "header header" "main main" "footer footer"; }
-    .site-main {
-      grid-area: main;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-column-gap: 4em;
-      grid-template-areas: "content sidebar"; }
-    .site-header {
-      grid-area: header; }
-    .site-footer {
-      grid-area: footer; } }
 
 h1 {
   font-size: 2.7em;
@@ -329,18 +309,19 @@ a {
   @media (min-width: 650px) {
     .free-planner {
       display: flex;
-      justify-content: center; }
+      justify-content: space-around; }
       .free-planner .planner {
         flex-wrap: wrap; } }
   .free-planner .image {
     background: url("../images/Self-Care-MockUp.png") center center no-repeat;
     background-size: auto;
     overflow: hidden;
-    flex-basis: 50%;
+    flex-basis: 25%;
     border-radius: 2px;
     max-width: 200px; }
   .free-planner .planner {
-    text-align: center; }
+    text-align: center;
+    flex-basis: 65%; }
     .free-planner .planner form {
       padding-bottom: 5rem; }
     .free-planner .planner h2 {
@@ -354,7 +335,7 @@ a {
     .free-planner .planner input {
       width: 90%;
       padding: 0.5rem;
-      margin: 0.5rem 0;
+      margin: 0.5rem;
       font-size: 1rem;
       font-style: italic; }
       @media (min-width: 960px) {
@@ -446,22 +427,12 @@ a {
     color: black; }
   .new-in-blog ul {
     margin: 2.5em 0; }
-    @media (min-width: 960px) {
-      .new-in-blog ul {
-        display: flex;
-        justify-content: center; }
-        .new-in-blog ul li {
-          flex-basis: 30%; }
-          .new-in-blog ul li:not(:last-child) {
-            margin-right: 1em;
-            margin-bottom: 0; } }
     .new-in-blog ul li {
       box-shadow: 0px 0px 8px 0px #ccbecc;
       transition: box-shadow 0.5s ease-in-out;
       text-align: left;
       min-width: 200px;
       max-width: 70%;
-      height: 100%;
       margin: 0 auto; }
       .new-in-blog ul li:hover {
         box-shadow: 0px 0px 15px 4px #ccbecc; }
@@ -475,6 +446,16 @@ a {
       position: absolute;
       width: 100%;
       height: auto; }
+    @media (min-width: 960px) {
+      .new-in-blog ul {
+        display: flex;
+        justify-content: center; }
+        .new-in-blog ul li {
+          flex-basis: 30%;
+          margin-bottom: 0; }
+          .new-in-blog ul li:not(:last-child) {
+            margin-right: 1em;
+            margin-bottom: 0; } }
   .new-in-blog .image {
     display: block;
     position: relative;
@@ -677,9 +658,6 @@ a {
 
 .about-wrapper {
   grid-column: 1 / -1; }
-  @media (min-width: 1024px) {
-    .about-wrapper {
-      width: -moz-available; } }
   .about-wrapper .story h1::after, .about-wrapper .who-i-am h1::after, .about-wrapper .social-media h1::after {
     content: '';
     background-color: black;
@@ -688,6 +666,9 @@ a {
     display: block;
     margin-top: 1em;
     margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .about-wrapper {
+      width: -moz-available; } }
 
 .hello .image img {
   display: none; }
@@ -732,6 +713,15 @@ a {
         transform: translateY(-50%);
         width: 100%;
         height: auto; } }
+
+@media (min-width: 1600px) {
+  .hello .image img {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+    height: 90%; } }
 
 .goal {
   text-align: center;
@@ -864,9 +854,6 @@ a {
 .post-sidebar {
   margin: 1em;
   text-align: center; }
-  @media (min-width: 1024px) {
-    .post-sidebar {
-      grid-area: sidebar; } }
   .post-sidebar h3 {
     margin: 0.5em 0;
     text-transform: uppercase;
@@ -881,7 +868,7 @@ a {
       margin-top: 0px;
       display: block; }
   .post-sidebar .about-me img {
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     margin: 1em 0; }
     .post-sidebar .about-me img:hover {
@@ -909,11 +896,13 @@ a {
     margin: 1em; }
   .post-sidebar .latest-posts a {
     display: flex;
-    text-transform: capitalize;
-    font-size: 0.9rem; }
+    text-transform: capitalize; }
+    .post-sidebar .latest-posts a .post-link {
+      font-size: 1rem;
+      padding-left: 1em; }
   .post-sidebar .latest-posts img {
-    width: 80px;
-    height: 50px;
+    width: 30%;
+    height: auto;
     padding-right: 0.4em; }
   .post-sidebar .latest-posts a:hover img {
     opacity: 0.7; }
@@ -927,6 +916,17 @@ a {
     .post-sidebar .categories a {
       text-transform: capitalize;
       font-weight: 600; }
+  @media (min-width: 650px) {
+    .post-sidebar .latest-posts a .post-link {
+      transform: translateY(40%);
+      font-size: 1.3rem; }
+    .post-sidebar .categories a {
+      font-size: 1.3rem; } }
+  @media (min-width: 1024px) {
+    .post-sidebar {
+      grid-area: sidebar; }
+      .post-sidebar .latest-posts a .post-link {
+        font-size: 0.9rem; } }
 
 .un {
   display: inline-block; }
@@ -981,40 +981,27 @@ a {
 
 .posts {
   margin: 0 2em; }
-  @media (min-width: 1024px) {
-    .posts {
-      grid-area: content; } }
   .posts h1 {
     font-size: 1.5rem;
     font-weight: 500; }
   .posts ul li {
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid var(--light-pink); }
   .posts .image {
-    flex: 0 0 45%;
-    margin: 1em 2rem;
-    padding-bottom: 2em; }
+    padding: 2em; }
     .posts .image img {
       width: 100%; }
     .posts .image:hover img {
       opacity: 0.7;
       border-radius: 15px; }
   .posts .content {
-    flex: 0 0 45%;
-    margin: 1em 2em;
-    padding-right: 2em;
-    padding-bottom: 2em; }
+    margin: 1em 2em; }
     .posts .content .text {
-      text-align: center;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%); }
+      text-align: center; }
     .posts .content h4 {
       text-transform: uppercase;
       font-weight: 500;
       padding: 1em 0;
-      font-size: 1.3rem; }
+      font-size: 1rem; }
     .posts .content p {
       font-size: 0.9rem; }
       .posts .content p a {
@@ -1027,23 +1014,56 @@ a {
           content: "|";
           margin-left: 0.3em;
           color: #000; }
+  @media (min-width: 650px) {
+    .posts ul li {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--light-pink); }
+    .posts .image {
+      flex: 0 0 45%;
+      margin: 1em 2rem;
+      padding-left: 2em; }
+      .posts .image img {
+        width: 100%; }
+      .posts .image:hover img {
+        opacity: 0.7;
+        border-radius: 15px; }
+    .posts .content {
+      flex: 0 0 45%;
+      margin: 1em 2em;
+      padding-right: 2em;
+      padding-bottom: 2em; }
+      .posts .content .text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+      .posts .content h4 {
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1em 0;
+        font-size: 1.3rem; }
+      .posts .content p {
+        font-size: 0.9rem; }
+        .posts .content p a {
+          text-transform: capitalize;
+          color: var(--dark-pink);
+          padding-right: 0.3em; }
+          .posts .content p a:hover {
+            color: #000; }
+          .posts .content p a:last-child::after {
+            content: "|";
+            margin-left: 0.3em;
+            color: #000; } }
+  @media (min-width: 1024px) {
+    .posts {
+      grid-area: content; } }
 
 .ebook-wrapper {
   grid-column: 1 / -1; }
-  @media (min-width: 960px) {
-    .ebook-wrapper .ebook-header {
-      padding: 30vh; }
-    .ebook-wrapper .self-care .img {
-      margin: 5em auto; }
-    .ebook-wrapper .self-care img {
-      display: block;
-      width: 130%;
-      height: 100%; }
-    .ebook-wrapper .faq ul {
-      -moz-columns: 2;
-           columns: 2; } }
   .ebook-wrapper .ebook-header {
-    background: url("../images/Start-day-with-clarity-feat-Copy-2.jpg") center center no-repeat; }
+    background: url("../images/Start-day-with-clarity-feat-Copy-2.jpg") center center no-repeat;
+    background-size: cover; }
     .ebook-wrapper .ebook-header .content {
       background-color: white;
       opacity: 0.8;
@@ -1142,12 +1162,25 @@ a {
       .ebook-wrapper .buy a:hover {
         background-color: black;
         color: var(--dark-pink); }
+  @media (min-width: 960px) {
+    .ebook-wrapper .ebook-header {
+      padding: 30vh; }
+    .ebook-wrapper .self-care .img {
+      margin: 5em auto; }
+    .ebook-wrapper .self-care img {
+      display: block;
+      width: 130%;
+      height: 100%; }
+    .ebook-wrapper .faq ul {
+      -moz-columns: 2;
+           columns: 2; } }
 
 .resources-wrapper {
   grid-column: 1 / -1; }
 
 .resources-header {
-  background: url("../images/Life-Organized-Featured.jpg") center center no-repeat; }
+  background: url("../images/Life-Organized-Featured.jpg") center center no-repeat;
+  background-size: cover; }
   .resources-header .content {
     background-color: white;
     opacity: 0.8;
@@ -1224,6 +1257,23 @@ a {
   .flexed {
     padding-top: 2rem;
     display: flex; } }
+
+@media (min-width: 1024px) {
+  .site {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4em;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+    .site-main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 4em;
+      grid-template-areas: "content sidebar"; }
+    .site-header {
+      grid-area: header; }
+    .site-footer {
+      grid-area: footer; } }
 
 @-webkit-keyframes slideLeft {
   100% {

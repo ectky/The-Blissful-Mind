@@ -52,10 +52,6 @@
     margin: 1em;
     text-align: center;
 
-    @include bp(laptop) {
-        grid-area: sidebar;
-    }
-
     h3 {
         margin: 0.5em 0;
         text-transform: uppercase;
@@ -75,7 +71,7 @@
 
     .about-me {
         img {
-            width: 50%;
+            width: 40%;
             border-radius: 50%;
             margin: 1em 0;
 
@@ -128,12 +124,16 @@
         a {
             display: flex;
             text-transform: capitalize;
-            font-size: 0.9rem;
+
+            .post-link{
+                font-size: 1rem;
+                padding-left: 1em;
+            }
         }
 
         img {
-            width: 80px;
-            height: 50px;
+            width: 30%;
+            height: auto;
             padding-right: 0.4em;
         }
 
@@ -158,6 +158,35 @@
         a {
             text-transform: capitalize;
             font-weight: 600;
+        }
+    }
+
+    @include bp(phone) {
+        .latest-posts {
+            a {
+                .post-link {
+                    transform: translateY(40%);
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .categories {
+            a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @include bp(laptop) {
+        grid-area: sidebar;
+
+        .latest-posts {
+            a {
+                .post-link {
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 }

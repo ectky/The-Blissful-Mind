@@ -1,10 +1,6 @@
 .about-wrapper {
     grid-column: 1 / -1;
 
-    @include bp(laptop){
-        width: -moz-available;
-    }
-
     .story h1::after, .who-i-am h1::after, .social-media h1::after {
         content: '';
         background-color: black;
@@ -13,6 +9,10 @@
         display: block;
         margin-top: 1em;
         margin: 0 auto;
+    }
+
+    @include bp(laptop){
+        width: -moz-available;
     }
 }
 
@@ -74,6 +74,19 @@
                 transform: translateY(-50%);
                 width: 100%;
                 height: auto;  
+            }
+        }
+    }
+
+    @include bp(desktoplarge){
+        .image {
+            img {
+                display: block;
+                position: relative;
+                top: 50%;
+                left: 13%;
+                transform: translateY(-50%);
+                height: 90%;  
             }
         }
     }

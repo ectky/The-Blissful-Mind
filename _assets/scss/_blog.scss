@@ -1,25 +1,17 @@
 .posts {
     margin: 0 2em;
 
-    @include bp(laptop){
-        grid-area: content;
-    }
-
     h1 {
         font-size: 1.5rem;
         font-weight: 500;
     }
 
-    ul li {    
-        display: flex;
-        justify-content: center;
+    ul li {
         border-bottom: 1px solid var(--light-pink);
     }
 
     .image {
-        flex: 0 0 45%;
-        margin: 1em 2rem;
-        padding-bottom: 2em;
+        padding: 2em;
 
         img {
             width: 100%;
@@ -32,23 +24,17 @@
     }
     
     .content {
-        flex: 0 0 45%;
         margin: 1em 2em;
-        padding-right: 2em;
-        padding-bottom: 2em;
 
         .text {
             text-align: center;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
         }
 
         h4 {
             text-transform: uppercase;
             font-weight: 500;
             padding: 1em 0;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
 
         p {
@@ -71,4 +57,73 @@
             }
         }
     }   
+
+    
+    @include bp(phone) {
+        ul li {    
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid var(--light-pink);
+        }
+    
+        .image {
+            flex: 0 0 45%;
+            margin: 1em 2rem;
+            padding-left: 2em;
+    
+            img {
+                width: 100%;
+            }
+    
+            &:hover img {
+                opacity: 0.7;
+                border-radius: 15px;
+            }
+        }
+        
+        .content {
+            flex: 0 0 45%;
+            margin: 1em 2em;
+            padding-right: 2em;
+            padding-bottom: 2em;
+    
+            .text {
+                text-align: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+    
+            h4 {
+                text-transform: uppercase;
+                font-weight: 500;
+                padding: 1em 0;
+                font-size: 1.3rem;
+            }
+    
+            p {
+                font-size: 0.9rem;
+    
+                a {
+                    text-transform: capitalize;
+                    color: var(--dark-pink);
+                    padding-right: 0.3em;
+    
+                    &:hover {
+                        color: #000;
+                    }
+    
+                    &:last-child::after {
+                        content: "|";
+                        margin-left: 0.3em;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    @include bp( laptop ){
+        grid-area: content;
+    }
 }
