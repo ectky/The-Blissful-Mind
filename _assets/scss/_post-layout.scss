@@ -161,6 +161,19 @@
         }
     }
 
+    .search form {
+        margin: 2em;
+
+        input {
+            border: none;
+            border: 1px solid darkgray;
+            height: 30px;
+            width: 100%;
+            padding: 0.5em;
+            font-style: italic;
+        }
+    }
+
     @include bp(phone) {
         .latest-posts {
             a {
@@ -184,8 +197,15 @@
         .latest-posts {
             a {
                 .post-link {
+                    transform: translateY(0);
                     font-size: 0.9rem;
                 }
+            }
+        }
+
+        .categories {
+            a {
+                font-size: 1rem;
             }
         }
     }
@@ -207,18 +227,5 @@
     &:hover:after {
         width: 85%;
         margin: 0 auto;
-    }
-
-    .search form {
-        margin: 2em;
-
-        input {
-            border: none;
-            border: 1px solid darkgray;
-            height: 30px;
-            width: 100%;
-            padding: 0.5em;
-            font-style: italic;
-        }
     }
 }

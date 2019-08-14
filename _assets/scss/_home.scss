@@ -147,14 +147,6 @@
     background-color: var(--light-pink);
     padding: 5em;
 
-    @include bp(mobile){
-        display: flex;
-
-        .content {
-            margin-left: 2em;
-        }
-    }
-
     p {
         font-size: 1.2rem;
         padding-bottom: 1.5rem;
@@ -188,6 +180,14 @@
             overflow: hidden;
             min-width: 400px;
             min-height: 400px;
+        }
+    }
+
+    @include bp(mobile){
+        display: flex;
+
+        .content {
+            margin-left: 2em;
         }
     }
 }

@@ -361,11 +361,6 @@ a {
 .introduction {
   background-color: var(--light-pink);
   padding: 5em; }
-  @media (min-width: 960px) {
-    .introduction {
-      display: flex; }
-      .introduction .content {
-        margin-left: 2em; } }
   .introduction p {
     font-size: 1.2rem;
     padding-bottom: 1.5rem; }
@@ -391,6 +386,11 @@ a {
       overflow: hidden;
       min-width: 400px;
       min-height: 400px; } }
+  @media (min-width: 960px) {
+    .introduction {
+      display: flex; }
+      .introduction .content {
+        margin-left: 2em; } }
 
 .new-in-blog {
   text-align: center;
@@ -916,6 +916,15 @@ a {
     .post-sidebar .categories a {
       text-transform: capitalize;
       font-weight: 600; }
+  .post-sidebar .search form {
+    margin: 2em; }
+    .post-sidebar .search form input {
+      border: none;
+      border: 1px solid darkgray;
+      height: 30px;
+      width: 100%;
+      padding: 0.5em;
+      font-style: italic; }
   @media (min-width: 650px) {
     .post-sidebar .latest-posts a .post-link {
       transform: translateY(40%);
@@ -926,7 +935,10 @@ a {
     .post-sidebar {
       grid-area: sidebar; }
       .post-sidebar .latest-posts a .post-link {
-        font-size: 0.9rem; } }
+        transform: translateY(0);
+        font-size: 0.9rem; }
+      .post-sidebar .categories a {
+        font-size: 1rem; } }
 
 .un {
   display: inline-block; }
@@ -941,15 +953,6 @@ a {
   .un:hover:after {
     width: 85%;
     margin: 0 auto; }
-  .un .search form {
-    margin: 2em; }
-    .un .search form input {
-      border: none;
-      border: 1px solid darkgray;
-      height: 30px;
-      width: 100%;
-      padding: 0.5em;
-      font-style: italic; }
 
 .post .content p {
   padding: 1em 0; }
@@ -1073,6 +1076,14 @@ a {
       padding: 3rem; }
       .ebook-wrapper .ebook-header .content h1 {
         padding-bottom: 1em; }
+        .ebook-wrapper .ebook-header .content h1::after {
+          content: '';
+          display: block;
+          width: 30%;
+          height: 2px;
+          margin: 0 auto;
+          margin-top: 0.5em;
+          background-color: black; }
       .ebook-wrapper .ebook-header .content p {
         text-transform: uppercase;
         margin: 1em 5em;
