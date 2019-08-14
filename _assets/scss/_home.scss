@@ -260,7 +260,7 @@
             text-align: left;
             min-width: 200px;
             max-width: 70%;
-            min-height: 100%;
+            height: 100%;
             margin: 0 auto;
 
             &:hover {
@@ -388,16 +388,6 @@
 }
 
 .subscribe {
-    @include bp(phone) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include bp(mobile){
-        .content {
-            border: none;
-        }
-    }
 
     .content {
         padding: 5em;
@@ -470,6 +460,16 @@
             font-style: italic;
             margin-right: 0.5rem;
             margin-bottom: 2em;
+        }
+    }
+    @include bp(phone) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include bp(mobile){
+        .content {
+            border: none;
         }
     }
 }

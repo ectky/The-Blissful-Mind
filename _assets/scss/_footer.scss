@@ -106,7 +106,7 @@
 .ig-pics ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-rows: repeat(2, 40%);
     grid-gap: 0.3em;
 
     @include bp (laptop) {
