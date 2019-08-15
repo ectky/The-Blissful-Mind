@@ -1,22 +1,22 @@
 html {
     font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
-    font-size: 12px;
+    font-size: var(--fs-phone);
     line-height: 1.5;
 
     @include bp( mobile ) {
-        font-size: 14px;
+        font-size: var(--fs-mobile);
     }
 
     @include bp( laptop ) {
-        font-size: 16px;
+        font-size: var(--fs-laptop);
     }
 
     @include bp( desktop ) {
-        font-size: 18px;
+        font-size: var(--fs-desktop);
     }
 
-    @include bp( desktop-large ) {
-        font-size: 20px;
+    @include bp( desktoplarge ) {
+        font-size: var(--fs-desktoplarge);
     }
 }
 

@@ -1,5 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i|Raleway:400,700,800&display=swap';
 :root {
+  --fs-phone: 12px;
+  --fs-mobile: 14px;
+  --fs-laptop: 16px;
+  --fs-desktop: 18px;
+  --fs-desktoplarge: 20px;
   --dark-grey: rgb(117, 105, 105);
   --black-grey: #111111;
   --light-pink: #FFF0ED;
@@ -7,17 +12,20 @@
 
 html {
   font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
-  font-size: 12px;
+  font-size: var(--fs-phone);
   line-height: 1.5; }
   @media (min-width: 960px) {
     html {
-      font-size: 14px; } }
+      font-size: var(--fs-mobile); } }
   @media (min-width: 1024px) {
     html {
-      font-size: 16px; } }
+      font-size: var(--fs-laptop); } }
   @media (min-width: 1250px) {
     html {
-      font-size: 18px; } }
+      font-size: var(--fs-desktop); } }
+  @media (min-width: 1600px) {
+    html {
+      font-size: var(--fs-desktoplarge); } }
 
 h1, h2 {
   font-family: "Playfair Display", Sans-serif; }
@@ -1395,6 +1403,11 @@ body.loaded .back-to-top {
   transition: all 0.5s ease-in-out; }
 
 :root {
+  --fs-phone: 12px;
+  --fs-mobile: 14px;
+  --fs-laptop: 16px;
+  --fs-desktop: 18px;
+  --fs-desktoplarge: 20px;
   --dark-grey: rgb(117, 105, 105);
   --black-grey: #111111;
   --light-pink: #FFF0ED;
