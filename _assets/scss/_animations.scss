@@ -2,27 +2,36 @@
     100% { left: 0; }
 }
 
-@keyframes slideRight {
-    100% { right: 0; }
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translate(-3em, -1em);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-@keyframes slideUp {
-    100% { bottom: 0; }
-}
-
-@keyframes slideDown {
-    100% { top: 0; }
+@keyframes slideeven {
+    from {
+        opacity: 0;
+        transform: translate(3em, 1em);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 body.loaded {
     .site-main {
-        opacity: 1;
-        animation: slideUp 1.5s forwards;
+        animation: slide 1.5s forwards;
     }
 
     .site-header {
         opacity: 1;
-        animation: slideLeft 1s forwards;
+        animation: slideeven 1s forwards;
     }
 
     .back-to-top {

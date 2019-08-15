@@ -64,14 +64,10 @@ a {
     padding-left: 0.5em; }
 
 .site-main {
-  opacity: 0;
-  position: relative;
-  bottom: -1000%; }
+  opacity: 0; }
 
 .site-header {
-  opacity: 0;
-  position: relative;
-  left: -400%; }
+  opacity: 0; }
   .site-header .site-title {
     text-align: center; }
     .site-header .site-title a img {
@@ -1294,39 +1290,46 @@ a {
   100% {
     left: 0; } }
 
-@-webkit-keyframes slideRight {
-  100% {
-    right: 0; } }
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate(-3em, -1em); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
 
-@keyframes slideRight {
-  100% {
-    right: 0; } }
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate(-3em, -1em); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
 
-@-webkit-keyframes slideUp {
-  100% {
-    bottom: 0; } }
+@-webkit-keyframes slideeven {
+  from {
+    opacity: 0;
+    transform: translate(3em, 1em); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
 
-@keyframes slideUp {
-  100% {
-    bottom: 0; } }
-
-@-webkit-keyframes slideDown {
-  100% {
-    top: 0; } }
-
-@keyframes slideDown {
-  100% {
-    top: 0; } }
+@keyframes slideeven {
+  from {
+    opacity: 0;
+    transform: translate(3em, 1em); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
 
 body.loaded .site-main {
-  opacity: 1;
-  -webkit-animation: slideUp 1.5s forwards;
-          animation: slideUp 1.5s forwards; }
+  -webkit-animation: slide 1.5s forwards;
+          animation: slide 1.5s forwards; }
 
 body.loaded .site-header {
   opacity: 1;
-  -webkit-animation: slideLeft 1s forwards;
-          animation: slideLeft 1s forwards; }
+  -webkit-animation: slideeven 1s forwards;
+          animation: slideeven 1s forwards; }
 
 body.loaded .back-to-top {
   opacity: 1; }
